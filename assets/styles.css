@@ -1,0 +1,170 @@
+/* Estilos generales */
+
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+
+    background-image: url(https://img.freepik.com/free-vector/night-ocean-landscape-full-moon-stars-shine_107791-7397.jpg?w=996&t=st=1708804634~exp=1708805234~hmac=6add6838c4f77d0a5f83229bcb8fc1d462309682e4046c003dcba51c2f9e7d15);
+    display: flex;
+    position: relative; /* Cambiado a relativo */
+    justify-content: space-between;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+/* Estilos del logo */
+
+.logo-container img {
+    border: 2px solid darkgray;
+    max-width: 150px;
+    height: auto;
+}
+
+/* Estilos del título */
+
+.title-container {
+    position: absolute; /* Cambiado a absoluto */
+    top: 10px; /* Alineado con la parte superior del contenedor */
+    left: 50%; /* Centrado horizontalmente */
+    transform: translateX(-50%); /* Ajuste para centrado horizontal */
+}
+
+.title-container h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    font-size: 70px;
+    transform: translateY(50px);
+}
+
+/* Estilos del menú */
+
+.menu-container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 5px;
+    background-color: none;
+}
+
+.menu-container a {
+    text-decoration: none;
+    color: white;
+    padding: 0 10px;
+    font-size: 35px;
+}
+
+.menu-container a:hover {
+    background-color: rgb(155, 155, 155);
+}
+
+.modelos{
+    padding: 5%;
+
+}
+
+.txt-container{
+    background-image: url(https://img.freepik.com/free-vector/tropical-leaves-background-zoom_23-2148580778.jpg?w=740&t=st=1708804631~exp=1708805231~hmac=ee6d2c7bd9e2bfa831f3ec54a803d480bee7223c50b4e192bf81ba8ba9575bb0);
+    font-size: 25px;
+    margin: 40px;
+    border: 2px lightseagreen solid;
+    color: white;
+    padding: 10px;
+}
+
+.capacitacion{
+    background-image: url(https://img.freepik.com/free-photo/fuji-mountain-with-milky-way-night_335224-104.jpg?t=st=1708964976~exp=1708968576~hmac=07f56e7d1cc725184b6640a669cc49bd3ea47e440e101addf849cfb4a0b37f4d&w=826);
+    font-size: 30px;
+    margin: 40px;
+    border: 2px lightseagreen solid;
+    color: white;
+    padding: 10px;
+}
+
+.footer{
+    margin: 0;
+    padding: 0;
+    color: white;
+    height: 150px;
+    font-size: 40px;
+    background-image: url(https://img.freepik.com/free-photo/tropical-leaves-bright-ai-generated-image_587448-1519.jpg?t=st=1708950245~exp=1708953845~hmac=94ae09e28f27b1f020e00a6da4aa6946b091ec4d2cef768bfd116c48237d95a6&w=826);
+}
+
+/*Estilos del Formulario de Logeo */
+
+.reg-container{
+    display: flex;
+    margin-left: 300px;
+}
+
+.register, .login{
+    padding: 10px;
+    width: 500px;
+    margin: 60px;
+    border: 2px lightseagreen solid;
+
+    background-image: url(https://img.freepik.com/free-photo/whitelipped-tree-frog-litoria-infrafrenata-wood_488145-1599.jpg?t=st=1708965008~exp=1708968608~hmac=2c883594370ef970d2207d32e13cb9a07636b466749f92320f69db4fcbcda676&w=740);
+}
+
+label {
+    display: block;
+    margin: 5px;
+    color: white;
+    font-size: 25px;
+}
+
+h2{
+    color: white;
+    font-size: 40px
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 40%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    
+}
+
+button {
+    background-color: rgb(0, 0, 82);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5c5c5c;
+}
+
+.gallery-container {
+    position: relative;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+    width: 500px;
+  }
+  
+  .navigation-buttons {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  
+  .navigation-buttons button {
+    margin: 0 10px;
+  }
+  
