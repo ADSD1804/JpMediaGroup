@@ -148,12 +148,16 @@ button:hover {
 
 .gallery-container {
     position: relative;
+    display: block;
+    border: blue solid;
   }
   
   .image-container img {
     width: 100%;
     height: auto;
     width: 500px;
+    height: 400px;
+    display: flex;
   }
   
   .navigation-buttons {
@@ -167,4 +171,3 @@ button:hover {
   .navigation-buttons button {
     margin: 0 10px;
   }
-  

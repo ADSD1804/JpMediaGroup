@@ -1,28 +1,37 @@
 <?php
-require 'PHPExcel/PHPExcel.php';
+// Configuración de la conexión a la base de datos
+$servername = "localhost";
+$username = "root"; // Nombre de usuario de MySQL por defecto en XAMPP
+$password = "12345"; // Contraseña de MySQL por defecto en XAMPP
+$database = "jp_database"; // Nombre de la base de datos que has creado en MySQL
 
-$nombre = $_POST['nombre'];
-$apellido = $_POST['apellido'];
-$email = $_POST['email'];
-$contraseña = $_POST['contraseña'];
+// Crear conexión
+$conn = new mysqli($servername, $username, $password, $database);
 
-// Crear un nuevo objeto PHPExcel
-$objPHPExcel = new PHPExcel();
+// Verificar la conexión
+if ($conn->connect_error) {
+    die("La conexión falló: " . $conn->connect_error);
+}
 
-// Agregar datos al archivo Excel
-$objPHPExcel->setActiveSheetIndex(0)
-            ->setCellValue('A1', 'Nombre')
-            ->setCellValue('B1', 'Apellido')
-            ->setCellValue('C1', 'Email')
-            ->setCellValue('D1', 'Contraseña')
-            ->setCellValue('A2', $nombre)
-            ->setCellValue('B2', $apellido)
-            ->setCellValue('C2', $email)
-            ->setCellValue('D2', $contraseña);
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Obtener los datos del formulario
+    $nombre = $_POST["nombre"];
+    $apellido = $_POST["apellido"];
+    $email = $_POST["email"];
+    $contraseña = $_POST["contraseña"];
 
-// Guardar el archivo Excel
-$objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel2007');
-$objWriter->save('registro.xlsx');
+    // Almacenamiento seguro de la contraseña
+    $contraseña_hash = password_hash($contraseña, PASSWORD_DEFAULT);
 
-echo "Datos guardados exitosamente en Excel.";
+    // Preparar la consulta SQL para insertar los datos en la tabla de admins
+    $sql = "INSERT INTO admins (nombre, apellido, email, contraseña) VALUES ('$nombre', '$apellido', '$email', '$contraseña_hash')";
+    if ($conn->query($sql) === TRUE) {
+        echo "Registro exitoso";
+    } else {
+        echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+}
+
+// Cerrar la conexión
+$conn->close();
 ?>
