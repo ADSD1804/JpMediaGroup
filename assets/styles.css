@@ -1,26 +1,23 @@
 /* Estilos generales */
-
-body {
-    background-color: black;
+body{
+    background-image: url(https://img.freepik.com/foto-gratis/increible-fotografia-blanco-negro-hermosas-montanas-colinas-cielos-oscuros_181624-179.jpg?t=st=1709816751~exp=1709820351~hmac=d6413cbdba6f3de607905e3c991eb2f38e71d3a75592599d173bf556b621748d&w=1380);
     margin: 0;
     padding: 0;
 }
 
 .container {
-
-    background-image: url(https://img.freepik.com/free-vector/night-ocean-landscape-full-moon-stars-shine_107791-7397.jpg?w=996&t=st=1708804634~exp=1708805234~hmac=6add6838c4f77d0a5f83229bcb8fc1d462309682e4046c003dcba51c2f9e7d15);
+    background-image: url(https://img.freepik.com/foto-gratis/fondo-pantalla-luna-arte-digital_23-2150918875.jpg?t=st=1709824598~exp=1709828198~hmac=a8d97ef9e13bed0b6c38a632899950c1d0b2c26e51a964e50300258edc7d77ed&w=1380);
     display: flex;
-    position: relative; /* Cambiado a relativo */
+    position: relative;
     justify-content: space-between;
-    padding: 10px;
-    color: white;
+    color: rgb(0, 137, 172);
     font-size: 20px;
 }
 
 /* Estilos del logo */
 
 .logo-container img {
-    border: 2px solid darkgray;
+    border: 2px solid rgb(0, 0, 0);
     max-width: 150px;
     height: auto;
 }
@@ -28,10 +25,10 @@ body {
 /* Estilos del título */
 
 .title-container {
-    position: absolute; /* Cambiado a absoluto */
+    position: relative; /* Cambiado a absoluto */
     top: 10px; /* Alineado con la parte superior del contenedor */
-    left: 50%; /* Centrado horizontalmente */
-    transform: translateX(-50%); /* Ajuste para centrado horizontal */
+    left: 5%; /* Centrado horizontalmente */
+    transform: translateX(-100%); /* Ajuste para centrado horizontal */
 }
 
 .title-container h1 {
@@ -53,18 +50,102 @@ body {
 
 .menu-container a {
     text-decoration: none;
-    color: white;
+    color: rgb(197, 197, 197);
     padding: 0 10px;
     font-size: 35px;
+    background-color: rgb(0, 155, 216);
+    border:  3px solid rgb(0, 112, 156);
+    border-radius: 15px;
 }
 
 .menu-container a:hover {
-    background-color: rgb(155, 155, 155);
+    background-color: rgb(192, 192, 192);
+    color: rgb(0, 155, 216);
+    border: 3px solid darkgray;
+    border-radius: 15px;
+}
+
+.menu-container a:active{
+    color: rgb(0, 94, 153);
+    background-color: rgb(136, 136, 136);
+    border: 3px solid rgb(87, 87, 87);
+    border-radius: 80% / 80%;
 }
 
 .modelos{
-    padding: 5%;
+    padding: 80px;
+}
 
+.slider-frame{
+    width: 1780px;
+    height: 1200px;
+    margin: 50px auto 0;
+    overflow: hidden;
+}
+
+.slider-frame ul{
+    animation: slide 16s infinite alternate ease-in-out;
+    display: flex;
+    padding: 0;
+    width: 400%;
+}
+
+.slider-frame li{
+    list-style: none;
+    width: 100%;
+}
+
+.slider-frame img{
+    width: 100%;
+}
+
+@keyframes slide{
+    0% {margin-left: 0%;}
+    20% {margin-left: 0%;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    80% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+
+.form_modelos{
+    background-color: rgb(139, 139, 139);
+    border: lightseagreen solid 3px;
+    margin: 40px;
+    padding-left: 20px;
+    display: flex;
+}
+
+.form_modelos h1{
+    font-family: Georgia;
+    font-size: 50px;
+}
+
+.form_modelos form{
+    margin: 10px;
+    flex-direction: column;
+    display: flex;
+    width: 650px;
+}
+
+.form_icon{
+    margin-bottom: -10px;
+    margin-top: 60px;
+    align-content: center;
+}
+
+.form{
+    height: 650px;
+    padding-left: 50px;
+}
+
+.form button{
+    padding-top: 10px;
 }
 
 .txt-container{
@@ -72,28 +153,100 @@ body {
     font-size: 25px;
     margin: 40px;
     border: 2px lightseagreen solid;
-    color: white;
+    color: rgb(197, 197, 197);
     padding: 10px;
 }
 
-.capacitacion{
+.txt-container h2, .blog h2{
+    color: rgb(0, 204, 255);
+}
+
+.blog{
     background-image: url(https://img.freepik.com/free-photo/fuji-mountain-with-milky-way-night_335224-104.jpg?t=st=1708964976~exp=1708968576~hmac=07f56e7d1cc725184b6640a669cc49bd3ea47e440e101addf849cfb4a0b37f4d&w=826);
     font-size: 30px;
     margin: 40px;
     border: 2px lightseagreen solid;
-    color: white;
+    color: rgb(197, 197, 197);
     padding: 10px;
+    justify-content: space-between;
+}
+
+.blog section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.blog a{
+    color: white;
+    align-items: center;   
+}
+
+.blog a:hover{
+    color: rgb(255, 255, 255);
 }
 
 .footer{
     margin: 0;
-    padding: 0;
-    color: white;
+    margin-right: 10px;
+    padding: 10px;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    color: rgb(197, 197, 197);
+    font-family: Verdana;
     height: 150px;
     font-size: 40px;
-    background-image: url(https://img.freepik.com/free-photo/tropical-leaves-bright-ai-generated-image_587448-1519.jpg?t=st=1708950245~exp=1708953845~hmac=94ae09e28f27b1f020e00a6da4aa6946b091ec4d2cef768bfd116c48237d95a6&w=826);
+    background-image: url(https://img.freepik.com/foto-gratis/fondo-pantalla-abstracto-nebulosa-ultra-detallado-10_1562-745.jpg?t=st=1709831474~exp=1709835074~hmac=5531ebc794f0ca81b18f3ea3a5e6d4ed16bcfa4ab640b1e9dcdddf1baf4ca39d&w=1380);
 }
 
+.footer a{
+    color: rgb(197, 197, 197);
+    text-decoration: none;
+    font: bold;
+    background-color: rgb(77, 77, 77);
+    border: 3px solid darkgray;
+}
+
+.footer a:hover{
+    background-color: rgb(192, 192, 192);
+    color: rgb(0, 155, 216);
+    border: 3px solid darkgray;
+}
+
+.footer a:active{
+    color: rgb(0, 94, 153);
+    background-color: rgb(136, 136, 136);
+    border: 3px solid rgb(87, 87, 87);
+}
+
+.address{
+    display: flex;
+    position: relative;
+    font-size: 18px;    
+    align-content: center;
+    margin-right: 20px;
+    margin-top: 50px;
+}
+
+.contact{
+    margin-left: 400px;
+}
+
+.contact div{
+    display: flex;
+    margin-top: 20px;
+}
+
+.contact img{
+    margin-right: 20px;
+}
+
+.copyright{
+    font-size: 18px;
+    margin-left: 250px;
+    margin-top: 30px;
+}
 /*Estilos del Formulario de Logeo */
 
 .reg-container{
@@ -106,19 +259,18 @@ body {
     width: 500px;
     margin: 60px;
     border: 2px lightseagreen solid;
-
     background-image: url(https://img.freepik.com/free-photo/whitelipped-tree-frog-litoria-infrafrenata-wood_488145-1599.jpg?t=st=1708965008~exp=1708968608~hmac=2c883594370ef970d2207d32e13cb9a07636b466749f92320f69db4fcbcda676&w=740);
 }
 
 label {
     display: block;
     margin: 5px;
-    color: white;
+    color: rgb(197, 197, 197);
     font-size: 25px;
 }
 
 h2{
-    color: white;
+    color: rgb(197, 197, 197);
     font-size: 40px
 }
 
@@ -134,7 +286,7 @@ input[type="password"] {
 }
 
 button {
-    background-color: rgb(0, 0, 82);
+    background-color: rgb(85, 85, 85);
     color: white;
     padding: 10px 20px;
     border: none;
@@ -143,31 +295,32 @@ button {
 }
 
 button:hover {
-    background-color: #5c5c5c;
+    background-color: #ffffff;
+    color: rgb(0, 2, 114);
 }
 
 .gallery-container {
     position: relative;
     display: block;
-    border: blue solid;
-  }
+}
   
-  .image-container img {
+.image-container img {
     width: 100%;
     height: auto;
     width: 500px;
     height: 400px;
     display: flex;
-  }
+}
   
-  .navigation-buttons {
+.navigation-buttons {
     position: absolute;
     top: 50%;
     left: 0;
     right: 0;
     text-align: center;
-  }
+}
   
-  .navigation-buttons button {
+.navigation-buttons button {
     margin: 0 10px;
-  }
+}
+
