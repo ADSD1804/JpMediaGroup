@@ -3,6 +3,7 @@ body{
     background-image: url(https://img.freepik.com/foto-gratis/increible-fotografia-blanco-negro-hermosas-montanas-colinas-cielos-oscuros_181624-179.jpg?t=st=1709816751~exp=1709820351~hmac=d6413cbdba6f3de607905e3c991eb2f38e71d3a75592599d173bf556b621748d&w=1380);
     margin: 0;
     padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .container {
@@ -10,32 +11,29 @@ body{
     display: flex;
     position: relative;
     justify-content: space-between;
-    color: rgb(0, 137, 172);
     font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
-/* Estilos del logo */
 
 .logo-container img {
     border: 2px solid rgb(0, 0, 0);
     max-width: 150px;
     height: auto;
+    margin: 20px;
 }
 
-/* Estilos del título */
-
 .title-container {
-    position: relative; /* Cambiado a absoluto */
-    top: 10px; /* Alineado con la parte superior del contenedor */
-    left: 5%; /* Centrado horizontalmente */
-    transform: translateX(-100%); /* Ajuste para centrado horizontal */
+    position: relative; 
+    top: 10px; 
+    left: 5%;
+    transform: translateX(-1200px);
 }
 
 .title-container h1 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 0;
     font-size: 70px;
-    transform: translateY(50px);
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 10px rgb(255, 238, 0);
 }
 
 /* Estilos del menú */
@@ -46,11 +44,13 @@ body{
     right: 0;
     padding: 5px;
     background-color: none;
+    margin: 15px;
+    margin-right: 100px;
 }
 
 .menu-container a {
     text-decoration: none;
-    color: rgb(197, 197, 197);
+    color: rgb(0, 0, 0);
     padding: 0 10px;
     font-size: 35px;
     background-color: rgb(0, 155, 216);
@@ -69,7 +69,7 @@ body{
     color: rgb(0, 94, 153);
     background-color: rgb(136, 136, 136);
     border: 3px solid rgb(87, 87, 87);
-    border-radius: 80% / 80%;
+    border-radius: 15px;
 }
 
 .modelos{
@@ -113,24 +113,37 @@ body{
     100% {margin-left: -300%;}
 }
 
-.form_modelos{
+.container_entrevista{
     background-color: rgb(139, 139, 139);
-    border: lightseagreen solid 3px;
+    border: rgb(70, 70, 70) solid 3px;
     margin: 40px;
-    padding-left: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     display: flex;
+    border-radius: 100px;
 }
 
-.form_modelos h1{
+.container_entrevista h1{
     font-family: Georgia;
     font-size: 50px;
 }
 
-.form_modelos form{
-    margin: 10px;
+.container_entrevista img{
+    border-radius: 30px;
+}
+
+.container_entrevista .form_entrevista{
+    background-color: white;
+    margin: 20px;
+    padding-left: 80px;
+    padding-bottom: 50px;
     flex-direction: column;
     display: flex;
     width: 650px;
+    border-radius: 30px;
+    border: 2px rgb(110, 110, 110) solid;
 }
 
 .form_icon{
@@ -139,12 +152,7 @@ body{
     align-content: center;
 }
 
-.form{
-    height: 650px;
-    padding-left: 50px;
-}
-
-.form button{
+.form_entrevista button{
     padding-top: 10px;
 }
 
@@ -167,7 +175,9 @@ body{
     margin: 40px;
     border: 2px lightseagreen solid;
     color: rgb(197, 197, 197);
-    padding: 10px;
+    padding-left : 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
     justify-content: space-between;
 }
 
@@ -177,13 +187,31 @@ body{
     margin-top: 20px;
 }
 
+.blog img{
+    box-shadow: 2px 2px 50px 12px white;
+}
+
+.blog img:hover{
+    box-shadow: 2px 2px 50px 12px rgb(2, 85, 153);
+}
+
+.blog img:active{
+    box-shadow: 2px 2px 50px 12px rgb(0, 140, 255);
+}
+
 .blog a{
     color: white;
     align-items: center;   
 }
 
 .blog a:hover{
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 2px rgb(148, 148, 148); 
+}
+
+.blog a:active{
+    color: rgb(48, 78, 124);
+    text-shadow: 2px 2px 2px rgb(255, 255, 255); 
 }
 
 .footer{
@@ -194,7 +222,7 @@ body{
     position: absolute;
     width: 100%;
     color: rgb(197, 197, 197);
-    font-family: Verdana;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     height: 150px;
     font-size: 40px;
     background-image: url(https://img.freepik.com/foto-gratis/fondo-pantalla-abstracto-nebulosa-ultra-detallado-10_1562-745.jpg?t=st=1709831474~exp=1709835074~hmac=5531ebc794f0ca81b18f3ea3a5e6d4ed16bcfa4ab640b1e9dcdddf1baf4ca39d&w=1380);
@@ -206,16 +234,17 @@ body{
     font: bold;
     background-color: rgb(77, 77, 77);
     border: 3px solid darkgray;
+    border-radius: 15px;
 }
 
 .footer a:hover{
     background-color: rgb(192, 192, 192);
-    color: rgb(0, 155, 216);
+    color: rgb(0, 0, 0);
     border: 3px solid darkgray;
 }
 
 .footer a:active{
-    color: rgb(0, 94, 153);
+    color: rgb(255, 255, 255);
     background-color: rgb(136, 136, 136);
     border: 3px solid rgb(87, 87, 87);
 }
@@ -244,7 +273,7 @@ body{
 
 .copyright{
     font-size: 18px;
-    margin-left: 250px;
+    margin-left: 400px;
     margin-top: 30px;
 }
 /*Estilos del Formulario de Logeo */
@@ -256,6 +285,7 @@ body{
 
 .register, .login{
     padding: 10px;
+    padding-left: 30px;
     width: 500px;
     margin: 60px;
     border: 2px lightseagreen solid;
@@ -267,6 +297,7 @@ label {
     margin: 5px;
     color: rgb(197, 197, 197);
     font-size: 25px;
+
 }
 
 h2{
@@ -277,12 +308,11 @@ h2{
 input[type="text"],
 input[type="email"],
 input[type="password"] {
-    width: 40%;
+    width: 60%;
     padding: 8px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    
 }
 
 button {
@@ -292,6 +322,7 @@ button {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    
 }
 
 button:hover {
@@ -300,27 +331,30 @@ button:hover {
 }
 
 .gallery-container {
-    position: relative;
-    display: block;
+    text-align: center;
+    padding: 40px;
+    margin: 40px;
+    background-color: rgb(136, 136, 136);
 }
   
-.image-container img {
+.image-container{
     width: 100%;
-    height: auto;
-    width: 500px;
-    height: 400px;
-    display: flex;
+    height: 600px;
+    overflow: hidden;
+}
+
+.image-container img{
+    width: 1200px;
+    align-self: center;
 }
   
 .navigation-buttons {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    text-align: center;
+    justify-content: space-between;
+    padding-top: 30px;
 }
   
 .navigation-buttons button {
-    margin: 0 10px;
+    width: 200px;
+    height: 40px;
 }
 

@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <header>
     <section class="container">
         <div class="logo-container">
             <img src="https://imagizer.imageshack.com/v2/246x369q70/538/ATDxcC.jpg" alt="logo_JP">
@@ -23,6 +24,7 @@
             <a href="login.html">Iniciar Sesion</a>
         </div>
     </section>
+</header>
     <section>
         <div class="txt-container">
             <h2>Quienes somos?</h2>
@@ -82,47 +84,49 @@
         </div>
     </section>
     <section>
-        <div class="form_modelos">
+        <div class="container_entrevista">
             <p>
                 <img src="assets/images/blog_background.jpg" style="width: 1000px;" alt="">
             </p>
-            <div class="form">
-                <h1>Agenda Entrevista</h1>
+            <div class="form_entrevista">
+                <div style="background-color: darkgray; width: 650px; border-radius: 15px; text-align: center; margin-left: -80px;"><h1>Agenda tu Entrevista</h1></div>
                 <form method="post" action="assets/">
                     <div>
                         <img class="form_icon" src="assets/images/user_icon.png" style="width: 50px;" alt="">
-                        <input name="nombre" type="text" placeholder="Nombre">
+                        <input class="form_input" name="nombre" type="text" placeholder="Nombre" required>
                     </div>
                     <div>
                         <img class="form_icon" src="assets/images/call_icon.png" style="width: 50px;" alt="">
-                        <input name="numero" type="text" placeholder="Teléfono">
+                        <input class="form_input" name="numero" type="text" placeholder="Teléfono" required>
                     </div>
                     <div>
                         <img class="form_icon" src="assets/images/photo_icon.png" style="width: 50px;" alt="">
-                        <input type="file" name="imagen" placeholder="Adjunta entre 2-3 Fotos (opcional)">
+                        <label style="font-size: 15px;" for="msg">(Opcional)</label>
+                        <input class="form_input" type="file" style="padding: 10px; border: 1px solid #ccc; background-color: #f7f7f7;"/>
                     </div>
                     <div>
-                        <a href=""><button type="submit">Enviar Formulario</button></a>
+                        <img class="form_icon" src="assets/images/comments.png" style="width: 50px;">
+                        <input class="form_input" type="text" placeholder="Escribenos un mensaje (Opcional)">
+                    </div>
+                    <div>
+                        <button type="submit">Enviar Formulario</button>
+                        <button type="reset">Limpar</button>
                     </div>
                 </form>
             </div>
         </div>
     </section>
-    <!--  -->
+    <!-- Cargar imagen del formulario de entrevista -->
     <script>
-        document.getElementById('uploadForm').addEventListener('submit', function(event) {
+        document.getElementById('uploadForm').addEventListener('submit', function (event) {
             event.preventDefault();
-            
+
             var formData = new FormData();
             var file = document.getElementById('imageUpload').files[0];
             formData.append('image', file);
-    
-            // Aquí puedes agregar tu código para enviar el formulario con la imagen
-            // Por ejemplo, puedes usar AJAX para enviar la imagen a un servidor
-    
-            // Ejemplo de cómo mostrar una vista previa de la imagen cargada
+
             var reader = new FileReader();
-            reader.onload = function(e) {
+            reader.onload = function (e) {
                 var preview = document.getElementById('preview');
                 var imgElement = document.createElement('img');
                 imgElement.src = e.target.result;
@@ -135,27 +139,20 @@
     </script>
     <section>
         <div class="blog">
-            <h2>Documentos de interés</h2>
+            <h2>Documentos de interés - Blog</h2>
             <section>
                 <div>
-                    <a href="https://docs.google.com/presentation/d/1-TneRNsO5SMaVy6CdRRRH3uAyARX_-oEiXSk5yjRm3k/edit?usp=sharing" target="_blank"><img src="assets/images/Vista_Previa_Dicc.png" width="500px"> <br> Diccionario Webcam</a>
+                    <a href="https://docs.google.com/presentation/d/1-TneRNsO5SMaVy6CdRRRH3uAyARX_-oEiXSk5yjRm3k/edit?usp=sharing"
+                        target="_blank"><img src="assets/images/Vista_Previa_Dicc.png" width="500px"> <br> Diccionario
+                        Webcam</a>
                 </div>
                 <div>
-                    <a href="" target="_blank"><img src="assets/images/Vista_Previa_Dicc.png" width="500px"> <br>Documento 2</a>
+                    <a href="" target="_blank"><img src="assets/images/Vista_Previa_Dicc.png" width="500px">
+                        <br>Documento 2</a>
                 </div>
                 <div>
-                    <a href="" target="_blank"><img src="assets/images/Vista_Previa_Dicc.png" width="500px"> <br>Documento 3</a>
-                </div>
-            </section>
-            <section>
-                <div>
-                    <a href="" target="_blank"><img src="assets/images/Vista_Previa_Dicc.png" width="500px"> <br>Documento 4</a>
-                </div>
-                <div>
-                    <a href="" target="_blank"><img src="assets/images/Vista_Previa_Dicc.png" width="500px"> <br>Documento 5</a>
-                </div>
-                <div>
-                    <a href="" target="_blank"><img src="assets/images/Vista_Previa_Dicc.png" width="500px"> <br>Documento 6</a>
+                    <a href="" target="_blank"><img src="assets/images/Vista_Previa_Dicc.png" width="500px">
+                        <br>Documento 3</a>
                 </div>
             </section>
         </div>
