@@ -66,7 +66,7 @@
                 <div>
                     <h1>Conviertete en Modelo</h1>
                 </div>
-                <form action="./backend/aspirantes.php" method="post">
+                <form action="backend/aspirantes.php" method="post">
                     <div>
                         <label for="nombre">Nombre Completo:</label>
                         <input type="text" name="nombre"><br>
@@ -110,14 +110,14 @@
                     </div>
                     <div>
                         <h3>¿Como encontraste nuestra página?</h3>
-                        <input type="checkbox" name="opcion">
+                        <input type="checkbox" name="encontrarnos">
                         <label for="opcion">Redes Sociales</label><br>
 
-                        <input type="checkbox" name="opcion">
+                        <input type="checkbox" name="encontrarnos">
                         <label for="opcion">Referido</label><br>
 
                         <label for="opcion">Otro</label>
-                        <input type="text" name="opcion">
+                        <input type="text" name="encontrarnos">
                     </div>
                     <div>
                         <h3>¿Que te motiva?</h3>
@@ -191,12 +191,12 @@
                     <div>
                         <h3>Si tienes alguna duda, dejanos leerla.</h3>
 
-                        <input type="text" name="dudas">
+                        <textarea name="dudas" id="dudas" cols="30" rows="10"></textarea>
                     </div>
 
                     <div>
-                        <button type="submit">Enviar</button>
-                        <button type="reset">Borrar</button>
+                        <button type="submit" name="enviar">Enviar</button>
+                        <button type="reset" name="borrar">Borrar</button>
                     </div>
 
                     <input type="hidden" name="_next" value="http://localhost/web_jpMediaGroup/modelos.html">

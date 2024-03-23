@@ -587,6 +587,12 @@ header {
     padding: 10px;
 }
 
+.form_newModels textarea{
+    border-radius: 20px;
+    padding: 10px;
+    width: 600px;
+}
+
 .form_newModels button{
     width: 100px;
     height: 50px;
