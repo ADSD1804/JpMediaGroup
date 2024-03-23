@@ -1,83 +1,177 @@
 /* Estilos generales */
 body{
-    background-image: url(https://img.freepik.com/foto-gratis/increible-fotografia-blanco-negro-hermosas-montanas-colinas-cielos-oscuros_181624-179.jpg?t=st=1709816751~exp=1709820351~hmac=d6413cbdba6f3de607905e3c991eb2f38e71d3a75592599d173bf556b621748d&w=1380);
+    background-image: url(../assets/images/fondo_body.jpg);
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+    background-size:cover;
     margin: 0;
     padding: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.container {
-    background-image: url(https://img.freepik.com/foto-gratis/fondo-pantalla-luna-arte-digital_23-2150918875.jpg?t=st=1709824598~exp=1709828198~hmac=a8d97ef9e13bed0b6c38a632899950c1d0b2c26e51a964e50300258edc7d77ed&w=1380);
+header {
+    background-image: url(../assets/images/fondo_banner.jpg);
+    border: rgba(218, 165, 32, 0.336) solid 2px;
+    background-size: cover;
     display: flex;
     position: relative;
     justify-content: space-between;
     font-size: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 99%;
+}
+
+.logo-container{
+    margin-left: 20px;    
 }
 
 .logo-container img {
-    border: 2px solid rgb(0, 0, 0);
-    max-width: 150px;
+    max-width: 250px;
     height: auto;
-    margin: 20px;
+    margin: -20px;
 }
 
-.title-container {
-    position: relative; 
-    top: 10px; 
-    left: 5%;
-    transform: translateX(-1200px);
+.logo-container img:hover{
+    transform: scale(1.1);
 }
 
-.title-container h1 {
-    margin: 0;
-    font-size: 70px;
-    color: rgb(0, 0, 0);
-    text-shadow: 2px 2px 10px rgb(255, 238, 0);
+.container_banner{
+    width: 400px;
 }
 
-/* Estilos del menú */
-
-.menu-container {
+.login{
     position: absolute;
-    bottom: 0;
-    right: 0;
+    display: inline-block;
+}
+
+.loginbtn{
+    background-color: #adadad8f;
     padding: 5px;
-    background-color: none;
-    margin: 15px;
+    border: none;
+    margin-top: 13px;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.loginbtn img{
+    width: 40px;
+    height: 40px;
+}
+
+.loginbtn:hover{
+    transform: scale(1.1);
+}
+
+.loginbtn:active{
+    background-color: #424242;
+}
+
+.login_content{
+    color: white;  
+    background-color: #424242a2;
+    border: 2px rgba(218, 165, 32, 0.562) solid;
+    min-width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    padding: 10px;
+    display: none;
+    margin-top: 80px;
+}
+
+.login_content input{
+    margin: 10px;
+    min-width: 200px;
+    height: 20px;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.login_content button{
+    margin: 10px;
+    padding: 8px;
+    width: 90px;
+    border-radius: 30px;
+    background-color: #000000;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    font-size: 15px;
+}
+
+.dropbtn {
+    background-color: #000000a1;
+    border: 2px rgba(218, 165, 32, 0.678) solid;
+    color: white;
+    padding: 5px;
+    font-size: 30px;
+    margin-top: 10px;
     margin-right: 100px;
+    width: 300px;
+    border-radius: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+  }
+
+.dropbtn:hover{
+    background-color: #7474749f;
+    color: black;
 }
 
-.menu-container a {
+.dropbtn:active{
+    background-color: #00000088;
+    color: white;
+    transform: scale(1);
+}
+  
+  .dropdown {
+    position: static;
+    display: inline-block;
+    max-width: 100%;
+    margin-left: 70px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #00000071;
+    border: 2px rgba(218, 165, 32, 0.596) solid;
+    max-width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 20px;
+    font-size: 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    margin-top: 10px;
+  }
+  
+  .dropdown-content a {
+    color: rgba(0, 0, 0, 0.479);
+    padding: 12px 16px;
     text-decoration: none;
-    color: rgb(0, 0, 0);
-    padding: 0 10px;
-    font-size: 35px;
-    background-color: rgb(0, 155, 216);
-    border:  3px solid rgb(0, 112, 156);
-    border-radius: 15px;
+    display: block;
+    color: #ffff;
+    border-radius: 30px;
+    width: 260px;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1b7;
+    color: #000000;
 }
 
-.menu-container a:hover {
-    background-color: rgb(192, 192, 192);
-    color: rgb(0, 155, 216);
-    border: 3px solid darkgray;
-    border-radius: 15px;
+    .dropdown-content a:active{
+        background-color: rgba(54, 54, 54, 0.363);
+        color: white;
+    }
+  
+  .show {
+    display:block;
 }
-
-.menu-container a:active{
-    color: rgb(0, 94, 153);
-    background-color: rgb(136, 136, 136);
-    border: 3px solid rgb(87, 87, 87);
-    border-radius: 15px;
-}
+  
 
 .modelos{
     padding: 80px;
 }
 
 .slider-frame{
-    width: 1780px;
+    width: 90%;
     height: 1200px;
     margin: 50px auto 0;
     overflow: hidden;
@@ -101,41 +195,38 @@ body{
 
 @keyframes slide{
     0% {margin-left: 0%;}
-    20% {margin-left: 0%;}
+    25% {margin-left: 0%;}
 
-    25% {margin-left: -100%;}
-    45% {margin-left: -100%;}
+    30% {margin-left: -100%;}
+    55% {margin-left: -100%;}
 
-    50% {margin-left: -200%;}
-    70% {margin-left: -200%;}
+    60% {margin-left: -200%;}
+    80% {margin-left: -200%;}
 
-    80% {margin-left: -300%;}
+    85% {margin-left: -300%;}
     100% {margin-left: -300%;}
 }
 
 .container_entrevista{
-    background-color: rgb(139, 139, 139);
-    border: rgb(70, 70, 70) solid 3px;
+    background-image: url(../assets/images/fondo_section.jpg);
+    background-size: cover;
+    border: rgba(218, 165, 32, 0.336) solid 2px;
     margin: 40px;
     padding-left: 80px;
     padding-right: 80px;
     padding-top: 20px;
     padding-bottom: 20px;
     display: flex;
-    border-radius: 100px;
+    text-align: center;
 }
 
-.container_entrevista h1{
-    font-family: Georgia;
-    font-size: 50px;
+.container_entrevista iframe{
+    box-shadow: 3px 3px 50px goldenrod ;
+    width: 800px;
 }
 
-.container_entrevista img{
-    border-radius: 30px;
-}
-
-.container_entrevista .form_entrevista{
-    background-color: white;
+.form_entrevista{
+    background-color: rgb(168, 168, 168);
     margin: 20px;
     padding-left: 80px;
     padding-bottom: 50px;
@@ -143,37 +234,84 @@ body{
     display: flex;
     width: 650px;
     border-radius: 30px;
-    border: 2px rgb(110, 110, 110) solid;
+    border: rgba(218, 165, 32, 0.336) solid 2px;
+    overflow: hidden;
+    color: rgb(255, 255, 255);
+}
+
+.form_entrevista h2{
+    font-size: 42px;
+    color: rgb(0, 0, 0);
+    text-shadow: 5px 5px 20px goldenrod;
+    background-color: #444444b7;
+    box-shadow: 0px 0px 30px goldenrod;
+    margin-left: -30%;
+    margin-top: -10px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+}
+
+.form_entrevista input[type="text"]{
+    width: 300px;
+    height: 40px;
+    border-radius: 30px;
+    padding-left: 10px;
+    border: goldenrod solid 2px;
 }
 
 .form_icon{
-    margin-bottom: -10px;
+    margin-bottom: -20px;
     margin-top: 60px;
     align-content: center;
 }
 
 .form_entrevista button{
-    padding-top: 10px;
+    margin: 15px;
+    padding: 10px;
+    width: 200px;
+    background-color: rgb(0, 0, 0);
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    border-radius: 30px;
+    border: goldenrod solid 2px;
+    cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.form_entrevista button:hover{
+    transform: scale(0.9);
+    background-color: rgb(107, 107, 107);
+}
+
+.form_entrevista button:active{
+    transform: scale();
+    background-color: rgb(0, 0, 0);
+    font-size: 20px;
+    border-radius: 30px;
 }
 
 .txt-container{
-    background-image: url(https://img.freepik.com/free-vector/tropical-leaves-background-zoom_23-2148580778.jpg?w=740&t=st=1708804631~exp=1708805231~hmac=ee6d2c7bd9e2bfa831f3ec54a803d480bee7223c50b4e192bf81ba8ba9575bb0);
+    background-image: url(../assets/images/fondo_section.jpg);
+    background-size: cover;   
     font-size: 25px;
     margin: 40px;
-    border: 2px lightseagreen solid;
+    border: rgba(218, 165, 32, 0.336) solid 2px;
     color: rgb(197, 197, 197);
-    padding: 10px;
+    padding-left: 20px;
 }
 
 .txt-container h2, .blog h2{
-    color: rgb(0, 204, 255);
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 5px 20px goldenrod;
 }
 
 .blog{
-    background-image: url(https://img.freepik.com/free-photo/fuji-mountain-with-milky-way-night_335224-104.jpg?t=st=1708964976~exp=1708968576~hmac=07f56e7d1cc725184b6640a669cc49bd3ea47e440e101addf849cfb4a0b37f4d&w=826);
+    background-image: url(../assets/images/fondo_section.jpg);
+    background-size: cover;  
     font-size: 30px;
     margin: 40px;
-    border: 2px lightseagreen solid;
+    border: rgba(218, 165, 32, 0.336) solid 2px;    
     color: rgb(197, 197, 197);
     padding-left : 40px;
     padding-right: 40px;
@@ -188,29 +326,33 @@ body{
 }
 
 .blog img{
-    box-shadow: 2px 2px 50px 12px white;
+    border: rgba(218, 165, 32, 0.336) solid 2px;
+    width: 500px;
 }
 
 .blog img:hover{
-    box-shadow: 2px 2px 50px 12px rgb(2, 85, 153);
+    box-shadow: 2px 2px 50px 12px rgb(0, 0, 0);
+    transform: scale(0.95);
 }
 
 .blog img:active{
-    box-shadow: 2px 2px 50px 12px rgb(0, 140, 255);
+    box-shadow: 2px 2px 50px 12px goldenrod;
 }
 
 .blog a{
     color: white;
     align-items: center;   
+    overflow: hidden;
 }
 
 .blog a:hover{
     color: rgb(0, 0, 0);
     text-shadow: 2px 2px 2px rgb(148, 148, 148); 
+    transform: scale(0.95);
 }
 
 .blog a:active{
-    color: rgb(48, 78, 124);
+    color: goldenrod;
     text-shadow: 2px 2px 2px rgb(255, 255, 255); 
 }
 
@@ -219,47 +361,48 @@ body{
     margin-right: 10px;
     padding: 10px;
     display: flex;
-    position: absolute;
-    width: 100%;
+    position: relative;
+    width: 98%;
     color: rgb(197, 197, 197);
     font-family: Georgia, 'Times New Roman', Times, serif;
     height: 150px;
     font-size: 40px;
-    background-image: url(https://img.freepik.com/foto-gratis/fondo-pantalla-abstracto-nebulosa-ultra-detallado-10_1562-745.jpg?t=st=1709831474~exp=1709835074~hmac=5531ebc794f0ca81b18f3ea3a5e6d4ed16bcfa4ab640b1e9dcdddf1baf4ca39d&w=1380);
+    background-image: url(../assets/images/fondo_footer.jpg);
+    background-size: cover;
+    border: rgba(218, 165, 32, 0.336) solid 2px;
 }
 
 .footer a{
     color: rgb(197, 197, 197);
     text-decoration: none;
     font: bold;
-    background-color: rgb(77, 77, 77);
-    border: 3px solid darkgray;
-    border-radius: 15px;
+    padding: 10px;
 }
 
 .footer a:hover{
-    background-color: rgb(192, 192, 192);
-    color: rgb(0, 0, 0);
-    border: 3px solid darkgray;
+    color: white;
+    transform: scale(0.95);
 }
 
 .footer a:active{
-    color: rgb(255, 255, 255);
-    background-color: rgb(136, 136, 136);
-    border: 3px solid rgb(87, 87, 87);
+    color:  rgb(0, 140, 255);
+}
+
+.footer .address img:hover{
+    transform: scale(1.2);
 }
 
 .address{
     display: flex;
     position: relative;
     font-size: 18px;    
-    align-content: center;
     margin-right: 20px;
-    margin-top: 50px;
+    padding: 10px;
 }
 
 .contact{
     margin-left: 400px;
+    margin-top: 25px ;
 }
 
 .contact div{
@@ -273,88 +416,295 @@ body{
 
 .copyright{
     font-size: 18px;
-    margin-left: 400px;
+    margin-left: 360px;
     margin-top: 30px;
 }
-/*Estilos del Formulario de Logeo */
 
 .reg-container{
     display: flex;
-    margin-left: 300px;
+    justify-content: center;
 }
 
-.register, .login{
+.reg-container h2{
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 20px goldenrod;
+}
+
+.register{
+    padding: 50px;
+    text-align: center;
+    width: 1200px;
+    margin: 80px;
+    border: rgba(218, 165, 32, 0.336) solid 2px;
+    background-image: url(../assets/images/fondo_register.jpg);
+    background-size: cover;
+    background-attachment:local;
+}
+
+.register label{
+    color: rgb(197, 197, 197);
+    font-size: 30px;
+    margin: 20px;
+    margin-left: 80px; 
+}
+
+.register input{
+    color: rgb(0, 0, 0);;
+    width: 350px;
+    border-radius: 30px;
+    height: 20px;
     padding: 10px;
-    padding-left: 30px;
-    width: 500px;
-    margin: 60px;
-    border: 2px lightseagreen solid;
-    background-image: url(https://img.freepik.com/free-photo/whitelipped-tree-frog-litoria-infrafrenata-wood_488145-1599.jpg?t=st=1708965008~exp=1708968608~hmac=2c883594370ef970d2207d32e13cb9a07636b466749f92320f69db4fcbcda676&w=740);
+    margin-left: 80px;
 }
 
-label {
-    display: block;
-    margin: 5px;
-    color: rgb(197, 197, 197);
-    font-size: 25px;
-
+.register h2{
+    margin-left: 80px;
+    margin-top: 20px;
+    font-size: 60px;
 }
 
-h2{
-    color: rgb(197, 197, 197);
-    font-size: 40px
-}
-
-input[type="text"],
-input[type="email"],
-input[type="password"] {
-    width: 60%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-button {
-    background-color: rgb(85, 85, 85);
+.register button{
+    width: 250px;
+    margin-left: 80px;
+    height: 50px;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.568);
     color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    
+    border-radius: 30px;
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
 
-button:hover {
-    background-color: #ffffff;
-    color: rgb(0, 2, 114);
+.register button:hover{
+    transform: scale(1.12);
+    background-color: rgba(116, 116, 116, 0.568);
+}
+
+.register button:active{
+    background-color: rgba(0, 0, 0, 0.568);
+
 }
 
 .gallery-container {
-    text-align: center;
+    display: flex;
     padding: 40px;
     margin: 40px;
-    background-color: rgb(136, 136, 136);
+    background-image: url(../assets/images/fondo_section.jpg);
+    background-size: cover;
+    justify-content: space-between;
 }
-  
+
+.gallery-container button{
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+}
+
+.gallery-container button:hover{
+    background-color: rgb(88, 88, 88);
+    color: #000000;
+}
+
+.gallery-container button:active{
+    transform: scale(0.9);
+}
+
 .image-container{
-    width: 100%;
+    width: 60%;
     height: 600px;
     overflow: hidden;
 }
 
 .image-container img{
-    width: 1200px;
-    align-self: center;
-}
-  
-.navigation-buttons {
-    justify-content: space-between;
-    padding-top: 30px;
-}
-  
-.navigation-buttons button {
-    width: 200px;
-    height: 40px;
+    width: 100%;
 }
 
+.navigation-buttons a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+  
+.navigation-buttons a:hover {
+    background-color: #7e7e7e88;
+    color: black;
+}
+
+.navigation-buttons button {
+    width: 80px;
+    height: 300px;
+    margin-top: 100px;
+    font-size: 70px;
+    border-radius: 30px;
+}
+
+.form_newModels{
+    width: 40%;
+    box-shadow: 5px 5px 55px  white;
+    margin: 20px;
+    padding: 10px;
+    text-align:justify;
+    margin-left: 400px;
+    margin-right: 400px;
+    width: 1000px;
+    height: auto;
+    overflow: hidden;
+}
+
+.form_newModels h3{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    box-shadow: 5px 5px 55px white;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+}
+
+.form_newModels h1{
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    width: 96%;
+    height: 50px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    box-shadow: 5px 5px 55px white;
+}
+
+.form_newModels label[type="text"]{
+    color: white;
+}
+
+#form_models label{
+    font-size: 20px;
+    color: darkgray;
+}
+
+.form_newModels input{
+    border-radius: 20px;
+    padding-left: 10px;
+}
+
+.form_newModels div{
+    padding: 10px;
+}
+
+.form_newModels button{
+    width: 100px;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 25px;
+    background-color: rgb(0, 0, 0);
+    color: #ffff;
+    border: #ffff solid 1px;
+    margin-left: 50px;
+}
+
+.form_newModels button:hover{
+    transform: scale(1.1);
+}
+
+.form_newModels button:active{
+    transform: scale(1.2);
+}
+
+.form_newModels label{
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+}
+
+.form_newModels input[type="text"]{
+    height: 30px;
+    margin-top: 20px;
+    width: 300px;
+}
+
+.form_newModels input[type="radio"], input[type="checkbox"]{
+    content: "";
+    width: 26px;
+    height: 26px;
+    border: 2px solid #ccc;
+    background: #fff;
+    border-radius: 100%;
+}
+
+.container_form{
+    background-color: darkblue;
+}
+
+@media only screen and (max-width: 1650px){
+
+    .container{
+        width: 100%;
+        position: relative;
+    }
+
+    .dropbtn{
+        width: 260px;
+    }
+
+    .dropdown-content{
+        width: 100px;
+    }
+
+    .logo-container{
+        margin-left: 400px;
+    }
+
+    .slider-frame{
+        width: 1000px;
+    }
+
+    .container_entrevista{
+        display: block;
+        justify-content: center;
+    }
+
+    .container_entrevista{
+        text-shadow: 2px 2px 10px goldenrod;
+    }
+
+    .container_entrevista iframe{
+        width: 90%;
+        margin-left: 80px;
+    }
+
+    .form_entrevista{
+        margin-left: 80px;
+        width: 570px;
+        padding-left: 40px;
+    }
+
+    .blog img{
+        width: 220px;
+    }
+
+    .blog a{
+        font-size: 18px;
+    }
+
+    .footer {
+        justify-content: space-between;
+        font-size: 30px;
+        width: 98%;
+    }
+   
+    .footer .address div{
+        width: 250px;
+        margin-right: 15px;
+    }
+
+    .footer .contact{
+        justify-content: center;
+        margin-left: 10%;
+    }
+
+    .footer .copyright{
+        margin-left: 18%;
+        font-size: 15px;
+    }
+
+    .form_newModels{
+        width: 60%;
+        margin-left: 250px;
+    }
+
+}
