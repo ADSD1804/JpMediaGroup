@@ -3,7 +3,7 @@
 include("database.php");
 
 $email = $_POST['email'];
-$password = $_POST['contrasenia'];
+$password = $_POST['contraseña'];
 $cargo = $_POST['id_cargo'];
 
 session_start();
@@ -16,12 +16,13 @@ $filas = mysqli_num_rows($result);
 
 if ($cargo == 1){
     header("Location: ../admin.php");
-} else if($cargo == 2){
+} elseif($cargo == 2){
     header("Location: ../profile.php");
 } else{
     header("Location: ../inicio.html");
     echo"Error";
 }
+
 mysqli_free_result($result);
 mysqli_close($connect);
 
