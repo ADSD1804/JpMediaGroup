@@ -9,6 +9,7 @@ body{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+
 header {
     background-image: url(../assets/images/fondo_banner.jpg);
     border: rgba(218, 165, 32, 0.336) solid 2px;
@@ -207,92 +208,36 @@ header {
     100% {margin-left: -300%;}
 }
 
-.container_entrevista{
+.content_location{
     background-image: url(../assets/images/fondo_section.jpg);
+    background-attachment: fixed;
     background-size: cover;
     border: rgba(218, 165, 32, 0.336) solid 2px;
     margin: 40px;
-    padding-left: 80px;
-    padding-right: 80px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    margin-top: 0;
+    padding: 40px;
     display: flex;
+    justify-content: space-between;
     text-align: center;
 }
 
-.container_entrevista iframe{
-    box-shadow: 3px 3px 50px goldenrod ;
+.iframe{
+    height: 500px;
+    background-size: cover;
+}
+
+.photo{
     width: 800px;
-}
-
-.form_entrevista{
-    background-color: rgb(168, 168, 168);
-    margin: 20px;
-    padding-left: 80px;
-    padding-bottom: 50px;
-    flex-direction: column;
-    display: flex;
-    width: 650px;
-    border-radius: 30px;
-    border: rgba(218, 165, 32, 0.336) solid 2px;
-    overflow: hidden;
-    color: rgb(255, 255, 255);
-}
-
-.form_entrevista h2{
-    font-size: 42px;
-    color: rgb(0, 0, 0);
-    text-shadow: 5px 5px 20px goldenrod;
-    background-color: #444444b7;
-    box-shadow: 0px 0px 30px goldenrod;
-    margin-left: -30%;
-    margin-top: -10px;
-    padding-top: 40px;
-    padding-bottom: 30px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
-}
-
-.form_entrevista input[type="text"]{
-    width: 300px;
-    height: 40px;
-    border-radius: 30px;
-    padding-left: 10px;
-    border: goldenrod solid 2px;
-}
-
-.form_icon{
-    margin-bottom: -20px;
-    margin-top: 60px;
+    padding: 5px;
     align-content: center;
 }
-
-.form_entrevista button{
-    margin: 15px;
-    padding: 10px;
-    width: 200px;
-    background-color: rgb(0, 0, 0);
-    font-size: 20px;
-    color: rgb(255, 255, 255);
-    border-radius: 30px;
-    border: goldenrod solid 2px;
-    cursor: pointer;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.form_entrevista button:hover{
-    transform: scale(0.9);
-    background-color: rgb(107, 107, 107);
-}
-
-.form_entrevista button:active{
-    transform: scale();
-    background-color: rgb(0, 0, 0);
-    font-size: 20px;
-    border-radius: 30px;
+.photo img{
+    width: 100%;
 }
 
 .txt-container{
     background-image: url(../assets/images/fondo_section.jpg);
+    background-attachment: fixed;
     background-size: cover;   
     font-size: 25px;
     margin: 40px;
@@ -308,6 +253,7 @@ header {
 
 .blog{
     background-image: url(../assets/images/fondo_section.jpg);
+    background-attachment: fixed;
     background-size: cover;  
     font-size: 30px;
     margin: 40px;
@@ -491,6 +437,7 @@ header {
     padding: 40px;
     margin: 40px;
     background-image: url(../assets/images/fondo_section.jpg);
+    background-attachment: fixed;
     background-size: cover;
     justify-content: space-between;
 }
@@ -539,104 +486,98 @@ header {
 }
 
 .form_newModels{
-    width: 40%;
-    box-shadow: 5px 5px 55px  white;
-    margin: 20px;
-    padding: 10px;
-    text-align:justify;
-    margin-left: 400px;
-    margin-right: 400px;
-    width: 1000px;
-    height: auto;
-    overflow: hidden;
+    width: 100%;
+    height: auto;    
+    background-color: rgba(46, 46, 46, 0.699);
 }
 
-.form_newModels h3{
-    color: rgb(255, 255, 255);
-    font-size: 20px;
-    box-shadow: 5px 5px 55px white;
-    background-color: rgb(0, 0, 0);
-    padding: 10px;
+.form_newModels a{
+    text-decoration: none;
+    font-size: 30px;
+    box-shadow: 5px 5px 55px rgb(209, 176, 26);
 }
 
 .form_newModels h1{
-    background-color: rgb(0, 0, 0);
-    padding: 10px;
-    width: 96%;
-    height: 50px;
+    text-align: center;
+    padding: 5px;
     color: rgb(255, 255, 255);
     font-size: 30px;
-    box-shadow: 5px 5px 55px white;
 }
 
-.form_newModels label[type="text"]{
+.form_newModels h1:hover{
+    color: rgb(206, 181, 41);
+    text-shadow: 0px 0px 15px rgb(255, 255, 255);
+}
+
+.table_users{
+    background-image: url(../assets/images/fondo_section.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    border: 2px black solid;
+    width: 500px;
     color: white;
 }
 
-#form_models label{
-    font-size: 20px;
-    color: darkgray;
-}
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid rgb(223, 223, 223);
+  }
+  
+  thead th:nth-child(1) {
+    width: 30%;
+  }
+  
+  thead th:nth-child(2) {
+    width: 20%;
+  }
+  
+  thead th:nth-child(3) {
+    width: 15%;
+  }
+  
+  thead th:nth-child(4) {
+    width: 35%;
+  }
+  
+  th,
+  td {
+    padding: 20px;
+  }
+  
+  thead th,
+  tfoot th {
+    font-family: "Rock Salt", cursive;
+  }
+  
+  th {
+    letter-spacing: 2px;
+  }
+  
+  td {
+    letter-spacing: 1px;
+  }
+  
+  tbody td {
+    text-align: center;
+  }
+  
+  tfoot th {
+    text-align: right;
+  }
+  
 
-.form_newModels input{
-    border-radius: 20px;
-    padding-left: 10px;
-}
+tbody tr:nth-child(odd) {
+    background-color: #a0a0a0;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #636363;
+  }
 
-.form_newModels div{
-    padding: 10px;
-}
 
-.form_newModels textarea{
-    border-radius: 20px;
-    padding: 10px;
-    width: 600px;
-}
-
-.form_newModels button{
-    width: 100px;
-    height: 50px;
-    border-radius: 30px;
-    font-size: 25px;
-    background-color: rgb(0, 0, 0);
-    color: #ffff;
-    border: #ffff solid 1px;
-    margin-left: 50px;
-}
-
-.form_newModels button:hover{
-    transform: scale(1.1);
-}
-
-.form_newModels button:active{
-    transform: scale(1.2);
-}
-
-.form_newModels label{
-    font-size: 25px;
-    color: rgb(255, 255, 255);
-}
-
-.form_newModels input[type="text"]{
-    height: 30px;
-    margin-top: 20px;
-    width: 300px;
-}
-
-.form_newModels input[type="radio"], input[type="checkbox"]{
-    content: "";
-    width: 26px;
-    height: 26px;
-    border: 2px solid #ccc;
-    background: #fff;
-    border-radius: 100%;
-}
-
-.container_form{
-    background-color: darkblue;
-}
-
-@media only screen and (max-width: 1650px){
+@media only screen and (max-width: 950px){
 
     .container{
         width: 100%;
@@ -644,39 +585,35 @@ header {
     }
 
     .dropbtn{
+        margin-left: 50px;
         width: 260px;
     }
 
     .dropdown-content{
-        width: 100px;
+        width: 400px;
     }
 
-    .logo-container{
-        margin-left: 400px;
+    .login{
+        margin-left: 50px;
     }
 
     .slider-frame{
-        width: 1000px;
+        margin-bottom: -500px;
+        width: 900px;
     }
 
     .container_entrevista{
         display: block;
         justify-content: center;
-    }
-
-    .container_entrevista{
-        text-shadow: 2px 2px 10px goldenrod;
+        padding: 10px;
     }
 
     .container_entrevista iframe{
         width: 90%;
-        margin-left: 80px;
     }
 
-    .form_entrevista{
-        margin-left: 80px;
-        width: 570px;
-        padding-left: 40px;
+    .txt-container{
+        font-size: 18px;
     }
 
     .blog img{
@@ -708,9 +645,5 @@ header {
         font-size: 15px;
     }
 
-    .form_newModels{
-        width: 60%;
-        margin-left: 250px;
-    }
 
 }

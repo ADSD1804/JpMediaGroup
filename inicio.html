@@ -20,9 +20,10 @@
                         alt=""></button>
                 <div id="form_login" class="login_content">
                     <h2>Iniciar Sesión</h2>
-                    <form action="">
+                    <form action="backend/user_verify.php" method="post">
                         <input type="email" id="email" name="email" placeholder="Correo" required><br>
-                        <input type="password" name="contrasenia" id="contrasenia" placeholder="Contraseña" required><br>
+                        <input type="password" id="contrasenia" name="contrasenia" placeholder="Contraseña"
+                            required><br>
 
                         <button type="submit">Enviar</button>
                         <button type="reset">Borrar</button>
@@ -40,6 +41,11 @@
         </div>
     </header>
     <section>
+        <div class="form_newModels">
+            <a href="https://forms.gle/ADqsKwFwqacbfaWY8" target="_blank">
+                <h1>Únete a la familia JP</h1>
+            </a>
+        </div>
         <div class="slider-frame">
             <ul>
                 <li><img src="assets/images/img1.jpg" alt=""></li>
@@ -50,13 +56,16 @@
         </div>
     </section>
     <section>
-        <div class="container_entrevista">
-            <p>
+        <div class="content_location">
+            <div class="iframe">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d591.0052124224022!2d-75.6905427002733!3d4.805514266936095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3887407fea68f9%3A0xa63309638e4fe32!2sPortal%20de%20Pinares!5e0!3m2!1ses!2sco!4v1710161374441!5m2!1ses!2sco"
-                    width="800" height="750" style="border:0;" allowfullscreen="" loading="lazy"
+                    width="800" height="710" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </p>
+            </div>
+            <div class="photo">
+                <img src="assets/images/photo_ph.jpg" alt="ph">
+            </div>
         </div>
     </section>
 
@@ -138,8 +147,8 @@
                         <img src="assets/images/map_location.png" style="width: 50px;">Portal de Pinares, Pereira,
                         Risaralda<br>
                     </a>
-                    <a href="https://www.facebook.com/jpmediagroupa/" target="_blank"><img src="assets/images/facebook.png"
-                            style="margin-left: 10px; width: 42px;"></a>
+                    <a href="https://www.facebook.com/jpmediagroupa/" target="_blank"><img
+                            src="assets/images/facebook.png" style="margin-left: 10px; width: 42px;"></a>
                     <a href="https://www.instagram.com/jpmediagroup_02/" target="_blank"><img
                             src="assets/images/instagram.png" style="width: 48px; margin-top: 10px;"></a>
                     <a href="mailto:admon.jpmedia@gmail.com" target="_blank"><img src="assets/images/gmail.png"
@@ -153,7 +162,7 @@
                         <p style="font-size: 20px;">3235105386</p>
                     </div>
                 </a>
-    
+
             </section>
             <section class="copyright">
                 <p>© 2024 JP Media Group</p>

@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Perfil</title>
     <link rel="stylesheet" href="assets/styles.css">
-    <script href="backend/menu.js"></script>
 </head>
 <body>
     <header>
@@ -14,7 +13,11 @@
         </div>
         <div class="container_banner">
             <div class="login">
-                <button onclick="loginAnimation()" class="loginbtn"><img src="assets/images/user_icon.png" alt=""></button>
+                <button onclick="loginAnimation()" class="loginbtn"><img src="assets/images/user_icon.png"
+                        alt=""></button>
+                <div id="form_login" class="login_content">
+                    
+                </div>
             </div>
             <div class="dropdown">
                 <button onclick="toggleDropdown()" class="dropbtn">Menú</button>
@@ -27,11 +30,9 @@
         </div>
     </header>
     <section>
-        <table>
-            
-        </table>
+        <h1>Bienvenido Usuario</h1>
     </section>
     
-    
+    <script src="backend/menu.js"></script>
 </body>
 </html>

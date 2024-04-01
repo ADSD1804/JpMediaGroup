@@ -20,7 +20,7 @@
                         alt=""></button>
                 <div id="form_login" class="login_content">
                     <h2>Iniciar Sesión</h2>
-                    <form action="">
+                    <form action="backend/user_verify.php" method="post">
                         <input type="email" id="email" name="email" placeholder="Correo" required><br>
                         <input type="password" name="contrasenia" id="contrasenia" placeholder="Contraseña" required><br>
 
@@ -40,6 +40,10 @@
         </div>
     </header>
     <section>
+        <div class="form_newModels">
+            <a href="https://forms.gle/ADqsKwFwqacbfaWY8" target="_blank"><h1>Únete a la familia JP</h1></a>
+        </div>
+        <section>
         <div class="gallery-container">
             <div class="navigation-buttons">
                 <button id="prevBtn"><</button>
@@ -58,152 +62,8 @@
             <div class="navigation-buttons">
                 <button id="nextBtn">></button>
             </div>
-        </div>
+        </div>  
     </section>
-
-    <section>
-        <div class="form_newModels" style="background-image: url(assets/images/fondo_form.jpg)">
-                <div>
-                    <h1>Conviertete en Modelo</h1>
-                </div>
-                <form action="backend/aspirantes.php" method="post">
-                    <div>
-                        <label for="nombre">Nombre Completo:</label>
-                        <input type="text" name="nombre"><br>
-
-                        <label for="cedula">Número de Cedula:</label>
-                        <input type="text" name="cedula"><br>
-
-                        <label for="numero">Número de Teléfono:</label>
-                        <input type="text" name="telefono"><br>
-                      </div>
-                    <div>
-                        <h3>¿Tienes hijos?</h3>
-
-                        <label for="hijos_si">Si</label>
-                        <input type="radio" name="hijos" value="Si"><br>
-
-                        <label for="hijos_no">No</label>
-                        <input type="radio" name="hijos" value="No"><br>
-                    </div>
-                    <div>
-                        <h3>¿Tienes experiencia como modelo?</h3>
-
-                        <label for="xp_si">Si</label>
-                        <input type="radio" name="xp" value="si"><br>
-
-                        <label for="xp_no">No</label>
-                        <input type="radio" name="xp" value="no"><br>
-                    </div>
-                    <div>
-                        <h3>¿Tienes experiencia con servicio al cliente?</h3>
-
-                        <label for="srvc_si">Si</label>
-                        <input type="radio" name="srvc" value="si"><br>
-
-                        <label for="srvc_no">No</label>
-                        <input type="radio" name="srvc" value="no"><br>
-                    </div>
-                    <div>
-                        <h3>¿Tienes algun inconveniente para trabajar?</h3>
-                        <input type="text" name="inconveniente"><br>
-                    </div>
-                    <div>
-                        <h3>¿Como encontraste nuestra página?</h3>
-                        <input type="checkbox" name="encontrarnos">
-                        <label for="opcion">Redes Sociales</label><br>
-
-                        <input type="checkbox" name="encontrarnos">
-                        <label for="opcion">Referido</label><br>
-
-                        <label for="opcion">Otro</label>
-                        <input type="text" name="encontrarnos">
-                    </div>
-                    <div>
-                        <h3>¿Que te motiva?</h3>
-                        <input type="text" name="motivacion"><br>
-                    </div>
-                    <div>
-                        <h3>Nivel Académico</h3>
-
-                        <label for="academico">Basica Primaria</label>
-                        <input type="radio" name="academico"><br>
-
-                        <label for="academico">Bachiller</label>
-                        <input type="radio" name="academico"><br>
-
-                        <label for="academico">Técnico</label>
-                        <input type="radio" name="academico"><br>
-
-                        <label for="academico">Tecnologo</label>
-                        <input type="radio" name="academico"><br>
-
-                        <label for="academico">Profesional</label>
-                        <input type="radio" name="academico"><br>
-                    </div>
-                    <div>
-                        <h3>Nivel de Ingles</h3>
-
-                        <label for="ingles">Bajo</label>
-                        <input type="radio" name="ingles"><br>
-
-                        <label for="ingles">Medio</label>
-                        <input type="radio" name="ingles"><br>
-
-                        <label for="ingles">Alto</label>
-                        <input type="radio" name="ingles"><br>
-
-                    </div>
-                    <div>
-                        <h3>Nivel de Informatica</h3>
-
-                        <label for="informatica">Bajo</label>
-                        <input type="radio" name="informatica"><br>
-
-                        <label for="informatica">Medio</label>
-                        <input type="radio" name="informatica"><br>
-
-                        <label for="informatica">Alto</label>
-                        <input type="radio" name="informatica">
-                    </div>
-                    <div>
-                        <h3>¿Que horario es de tu preferencia?</h3>
-
-                        <label for="horario">Mañana</label>
-                        <input type="radio" name="horario"><br>
-
-                        <label for="horario">Tarde</label>
-                        <input type="radio" name="horario"><br>
- 
-                        <label for="horario">Noche</label>
-                        <input type="radio" name="horario">
-                    </div>
-                    <div>
-                        <h3>¿Que tipo de paginas son de tu preferencia?</h3>
-
-                        <label for="paginas">Publicas</label>
-                        <input type="radio" name="paginas"><br>
-
-                        <label for="paginas">Privadas</label>
-                        <input type="radio" name="paginas">
-                    </div>
-
-                    <div>
-                        <h3>Si tienes alguna duda, dejanos leerla.</h3>
-
-                        <textarea name="dudas" id="dudas" cols="30" rows="10"></textarea>
-                    </div>
-
-                    <div>
-                        <button type="submit" name="enviar">Enviar</button>
-                        <button type="reset" name="borrar">Borrar</button>
-                    </div>
-
-                    <input type="hidden" name="_next" value="http://localhost/web_jpMediaGroup/modelos.html">
-                    <input type="hidden" name="_captcha" value="false">
-
-                </form>
-        </div>
     </section>
     <footer>
         <section class="footer">

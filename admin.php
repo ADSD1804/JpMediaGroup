@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="assets/styles.css">
     <script href="backend/menu.js"></script>
 </head>
+
 <body>
     <header>
         <div class="logo-container">
@@ -18,9 +20,12 @@
                         alt=""></button>
                 <div id="form_login" class="login_content">
                     <h2>Iniciar Sesión</h2>
-                    <form action="">
+                    <form action="backend/user_verify.php" method="post">
+
                         <input type="email" id="email" name="email" placeholder="Correo" required><br>
-                        <input type="password" name="contrasenia" id="contrasenia" placeholder="Contraseña" required><br>
+
+                        <input type="password" name="contrasenia" id="contrasenia" placeholder="Contraseña"
+                            required><br>
 
                         <button type="submit">Enviar</button>
                         <button type="reset">Borrar</button>
@@ -37,12 +42,48 @@
             </div>
         </div>
     </header>
-    <section>
+    <section class="table_users">
+
+        <?php
+        include ("backend/database.php");
+        ?>
+        <h1>Usuarios</h1>
         <table>
-            
+            <tr>
+                <td>Nombre</td>
+                <td>Email</td>
+                <td>Contraseña</td>
+                <td>Cargo</td>
+            </tr>
+
+            <?php
+            $sql = "SELECT * FROM usuarios";
+            $result = mysqli_query($connect, $sql);
+
+            while ($mostrar = mysqli_fetch_array($result)) {
+                ?>
+                <tr>
+                    <td>
+                        <?php echo $mostrar['nombre'] ?>
+                    </td>
+                    <td>
+                        <?php echo $mostrar['email'] ?>
+                    </td>
+                    <td>
+                        <?php echo $mostrar['contraseña'] ?>
+                    </td>
+                    <td>
+                        <?php echo $mostrar['id_cargo'] ?>
+                    </td>
+                </tr>
+
+                <?php
+            }
+            ?>
         </table>
     </section>
-    
-    
+
+
 </body>
+
 </html>
