@@ -4,7 +4,7 @@ function loginAnimation() {
 }
 
 window.onclick = function (event) {
-  if (!event.target.matches(".login_banner")) {
+  if (!event.target.matches(".login")) {
     let login = document.getElementsByClassName("login_content");
     for (let i = 0; i < login.length; i++) {
       let openLogin = login[i];

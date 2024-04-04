@@ -1,56 +1,64 @@
-/* Estilos generales */
+@import url("https://fonts.googleapis.com/css?family=Roboto:100");
+
 body{
-    background-image: url(../assets/images/fondo_body.jpg);
-    background-attachment:fixed;
-    background-repeat:no-repeat;
-    background-size:cover;
     margin: 0;
     padding: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-
 header {
-    background-image: url(../assets/images/fondo_banner.jpg);
-    border: rgba(218, 165, 32, 0.336) solid 2px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.banner_redes{
+    background-image: linear-gradient(to right, rgb(255, 225, 128),goldenrod,rgb(255, 225, 128),goldenrod,rgb(255, 225, 128));    
     background-size: cover;
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-    font-size: 20px;
-    width: 99%;
+    text-align: right;
+    width: 100%;
+}
+
+.banner_redes img{
+    margin: 5px;
+    width: 25px;
+    justify-content:end;
 }
 
 .logo-container{
-    margin-left: 20px;    
+    margin: 0;   
 }
 
 .logo-container img {
     max-width: 250px;
     height: auto;
-    margin: -20px;
 }
 
 .logo-container img:hover{
     transform: scale(1.1);
 }
 
-.container_banner{
-    width: 400px;
+.menu_container{
+    display: flex;
+    background-size: cover;
+    margin-bottom: -20px;
+    padding: 10px;
+    width: 100%;
+    height: 110px;
+    background-color: #000000;
 }
 
 .login{
-    position: absolute;
-    display: inline-block;
+    position: static;
+    padding-top: 18px;
 }
 
 .loginbtn{
-    background-color: #adadad8f;
-    padding: 5px;
+    right: 20px;
+    margin-top: 10px;
+    border-radius: 30px;
     border: none;
-    margin-top: 13px;
-    border-radius: 10px;
-    position: absolute;
+    background-color: #00000000;
 }
 
 .loginbtn img{
@@ -62,20 +70,21 @@ header {
     transform: scale(1.1);
 }
 
-.loginbtn:active{
-    background-color: #424242;
-}
-
 .login_content{
+    right: 50px;
     color: white;  
     background-color: #424242a2;
-    border: 2px rgba(218, 165, 32, 0.562) solid;
-    min-width: 300px;
+    min-width: 200px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     border-radius: 20px;
-    padding: 10px;
     display: none;
-    margin-top: 80px;
+    position: fixed;
+    margin-top: 10px;
+}
+
+.login_content h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
 }
 
 .login_content input{
@@ -88,68 +97,34 @@ header {
 
 .login_content button{
     margin: 10px;
-    padding: 8px;
+    padding: 2px;
     width: 90px;
     border-radius: 30px;
-    background-color: #000000;
-    color: white;
+    background-image: linear-gradient(to right, goldenrod, yellow, goldenrod, yellow, goldenrod);
+    color: rgb(134, 110, 31);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
     font-size: 15px;
 }
-
-.dropbtn {
-    background-color: #000000a1;
-    border: 2px rgba(218, 165, 32, 0.678) solid;
-    color: white;
-    padding: 5px;
-    font-size: 30px;
-    margin-top: 10px;
-    margin-right: 100px;
-    width: 300px;
-    border-radius: 20px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
-  }
-
-.dropbtn:hover{
-    background-color: #7474749f;
-    color: black;
-}
-
-.dropbtn:active{
-    background-color: #00000088;
-    color: white;
-    transform: scale(1);
-}
-  
-  .dropdown {
-    position: static;
-    display: inline-block;
-    max-width: 100%;
-    margin-left: 70px;
-  }
   
   .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #00000071;
-    border: 2px rgba(218, 165, 32, 0.596) solid;
-    max-width: 300px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    justify-content: right;
+    width: 80%;
+    height: 50px;
+    display: flex;
+    text-align: center;
     border-radius: 20px;
-    font-size: 30px;
+    font-size: 20px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
-    margin-top: 10px;
   }
   
-  .dropdown-content a {
-    color: rgba(0, 0, 0, 0.479);
-    padding: 12px 16px;
+  .dropdown-content a{
+    padding: 10px;
+    margin-top: 20px;
     text-decoration: none;
     display: block;
     color: #ffff;
-    border-radius: 30px;
-    width: 260px;
+    border-radius: 20px;
+    width: 190px;
   }
   
   .dropdown-content a:hover {
@@ -157,24 +132,79 @@ header {
     color: #000000;
 }
 
-    .dropdown-content a:active{
-        background-color: rgba(54, 54, 54, 0.363);
-        color: white;
-    }
-  
-  .show {
-    display:block;
+.dropdown-content a:active{
+    background-color: rgba(54, 54, 54, 0.363);
+    color: white;
 }
   
+.background_ini{
+    background-image: url(images/background_ini.png);
+    background-size: cover;
+    height: 900px;
+    width: 100%;
+    background-attachment: fixed;
+    text-align: right;
+    justify-content: right;
+    align-items: end
+}
+
+.title_ini{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+}
+
+.subtitle_ini{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    padding-right: 50px;
+    margin-top: -60px;
+}
+
+.form_background{
+    border-radius: 10px;
+    margin-left: 1550px;
+    width: 300px;
+    height: 40px; 
+    background-image: linear-gradient(to right, goldenrod, yellow, goldenrod, yellow, goldenrod);
+}
+
+.form_btn{
+    text-decoration: none;
+    text-align: center;
+    color: rgb(173, 124, 0);
+}
+
+.form_btn:hover{
+    color: black;
+}
+
+.form_background:hover{
+    background-image: linear-gradient(to right, yellow, goldenrod, yellow, goldenrod, yellow);
+}
+
+.mision_vision{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -20px;
+}
+
+.show {
+    display: block;
+    right: 20px;
+}
 
 .modelos{
     padding: 80px;
 }
 
 .slider-frame{
-    width: 90%;
-    height: 1200px;
-    margin: 50px auto 0;
+    width: 100%;
+    height: auto;
+    margin: 0;
     overflow: hidden;
 }
 
@@ -239,15 +269,16 @@ header {
     background-image: url(../assets/images/fondo_section.jpg);
     background-attachment: fixed;
     background-size: cover;   
-    font-size: 25px;
-    margin: 40px;
-    border: rgba(218, 165, 32, 0.336) solid 2px;
+    font-size: 22px;
+    width: 900px;
     color: rgb(197, 197, 197);
-    padding-left: 20px;
+    text-shadow: 5px 5px 20px goldenrod;
+    padding: 40px;
+    height: 480px;
 }
 
 .txt-container h2, .blog h2{
-    color: rgb(255, 255, 255);
+    color: goldenrod;
     text-shadow: 5px 5px 20px goldenrod;
 }
 
@@ -304,23 +335,23 @@ header {
 
 .footer{
     margin: 0;
-    margin-right: 10px;
-    padding: 10px;
+    margin-bottom: -50px;
     display: flex;
-    position: relative;
-    width: 98%;
+    width: 100%;
     color: rgb(197, 197, 197);
     font-family: Georgia, 'Times New Roman', Times, serif;
     height: 150px;
     font-size: 40px;
-    background-image: url(../assets/images/fondo_footer.jpg);
+    background-image: linear-gradient(to left, rgba(218, 165, 32, 0.329), rgba(255, 255, 0, 0.342), rgba(255, 255, 0, 0.322), rgba(218, 165, 32, 0.336), rgba(218, 165, 32, 0.322));
     background-size: cover;
-    border: rgba(218, 165, 32, 0.336) solid 2px;
+    background-attachment: fixed;
 }
 
 .footer a{
     color: rgb(197, 197, 197);
     text-decoration: none;
+    text-align: center;
+    margin-bottom: 10px;
     font: bold;
     padding: 10px;
 }
@@ -334,16 +365,20 @@ header {
     color:  rgb(0, 140, 255);
 }
 
-.footer .address img:hover{
-    transform: scale(1.2);
-}
-
 .address{
     display: flex;
     position: relative;
     font-size: 18px;    
     margin-right: 20px;
     padding: 10px;
+}
+
+.location{
+    display: flex;
+}
+
+#location{
+    width: 60px;
 }
 
 .contact{
@@ -485,30 +520,6 @@ header {
     border-radius: 30px;
 }
 
-.form_newModels{
-    width: 100%;
-    height: auto;    
-    background-color: rgba(46, 46, 46, 0.699);
-}
-
-.form_newModels a{
-    text-decoration: none;
-    font-size: 30px;
-    box-shadow: 5px 5px 55px rgb(209, 176, 26);
-}
-
-.form_newModels h1{
-    text-align: center;
-    padding: 5px;
-    color: rgb(255, 255, 255);
-    font-size: 30px;
-}
-
-.form_newModels h1:hover{
-    color: rgb(206, 181, 41);
-    text-shadow: 0px 0px 15px rgb(255, 255, 255);
-}
-
 .table_users{
     background-image: url(../assets/images/fondo_section.jpg);
     background-size: cover;
@@ -629,7 +640,7 @@ tbody tr:nth-child(odd) {
         font-size: 30px;
         width: 98%;
     }
-   
+
     .footer .address div{
         width: 250px;
         margin-right: 15px;
@@ -644,6 +655,4 @@ tbody tr:nth-child(odd) {
         margin-left: 18%;
         font-size: 15px;
     }
-
-
 }
