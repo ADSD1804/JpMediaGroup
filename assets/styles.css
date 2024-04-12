@@ -10,6 +10,8 @@ body{
     margin-bottom: 40px;
     padding: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #000000;  
+    cursor: url(images/cursor.png), auto;
 }
 
 header {
@@ -21,10 +23,28 @@ header {
 footer{
     display: block;
     width: 100%;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+#botonIrArriba {
+    display: none;
+    position:fixed;
+    bottom: -25px;
+    left: 50%;
+    z-index: 99;
+    font-size: 18px;
+    background-color: goldenrod;
+    color: white;
+    border: 2px black solid;
+    border-radius: 70%;
+    padding: 10px 15px;
+    cursor: url(images/hand.png), auto;
 }
 
 .banner_redes{
-    background-image: linear-gradient(to right, rgb(255, 225, 128),goldenrod,rgb(255, 225, 128),goldenrod,rgb(255, 225, 128));    
+    background-image: linear-gradient(to right, rgb(255, 225, 128),#daa520,rgb(255, 225, 128),goldenrod,rgb(255, 225, 128));    
     background-size: cover;
     text-align: right;
     width: 100%;
@@ -47,6 +67,7 @@ footer{
 
 .logo-container img:hover{
     transform: scale(1.1);
+    cursor: url(images/hand.png), auto;    
 }
 
 .menu_container{
@@ -65,10 +86,20 @@ footer{
 
 .loginbtn{
     right: 20px;
-    margin-top: 10px;
-    border-radius: 30px;
+    border-radius: 10px;
+    width: 220px;
+    margin-right: 20px;
+    margin-left: 30px;
+    padding: 2px;
+    display: flex;
     border: none;
-    background-color: #00000000;
+    background-color: rgba(255, 220, 124, 0.87);
+}
+
+.loginbtn h2{
+    text-align: center;
+    margin: 10px;
+
 }
 
 .loginbtn img{
@@ -78,6 +109,7 @@ footer{
 
 .loginbtn:hover{
     transform: scale(1.1);
+    cursor: url(images/hand.png), auto;   
 }
 
 .login_content{
@@ -140,6 +172,7 @@ footer{
   .dropdown-content a:hover {
     background-color: #f1f1f1b7;
     color: #000000;
+    cursor: url(images/hand.png), auto;   
 }
 
 .dropdown-content a:active{
@@ -174,9 +207,12 @@ footer{
     margin-top: -60px;
 }
 
+
+
 .form_background{
     border-radius: 10px;
     margin-left: 1550px;
+    margin-top: 50px;
     width: 300px;
     height: 40px; 
     background-image: linear-gradient(to right, goldenrod, yellow, goldenrod, yellow, goldenrod);
@@ -190,10 +226,54 @@ footer{
 
 .form_btn:hover{
     color: black;
+    cursor: url(images/hand.png), auto;   
+}
+
+.container-capt{
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+
+.texto-capt h2{
+    color: white;
+    margin-top: 20px;
+}
+
+.form-capt{
+    border-radius: 10px;
+    margin-left: 800px;
+    margin-top: 40px;
+    padding-top: -10px;
+    width: 300px;
+    height: 40px; 
+    background-image: linear-gradient(to right, goldenrod, yellow, goldenrod, yellow, goldenrod);
+}
+
+#btn-capt{
+    text-decoration: none;
+    text-align: center;
+    color: rgb(173, 124, 0);
+    cursor: url(images/hand.png), auto;
+}
+
+#btn-capt h1{
+    margin: 0;
+}
+
+#form-capt:hover{
+    color: #000000;
+    background-image: linear-gradient(to right, yellow, goldenrod, yellow, goldenrod, yellow);
+}
+
+#form_btn:hover{
+    background-image: linear-gradient(to right, yellow, goldenrod, yellow, goldenrod, yellow);
+    cursor: url(images/hand.png), auto;   
 }
 
 .form_background:hover{
     background-image: linear-gradient(to right, yellow, goldenrod, yellow, goldenrod, yellow);
+    cursor: url(images/hand.png), auto;   
 }
 
 .mision_vision{
@@ -275,10 +355,7 @@ footer{
     width: 100%;
 }
 
-.txt-container{
-    background-image: url(../assets/images/fondo_section.jpg);
-    background-attachment: fixed;
-    background-size: cover;   
+.txt-container{ 
     font-size: 22px;
     width: 900px;
     color: rgb(197, 197, 197);
@@ -294,11 +371,8 @@ footer{
 }
 
 .blog{
-    background-image: url(../assets/images/fondo_section.jpg);
-    background-attachment: fixed;
-    background-size: cover;  
     font-size: 30px;
-    padding: 30px;  
+    padding: 50px;  
     color: rgb(197, 197, 197);
     justify-content: space-between;
 }
@@ -310,12 +384,13 @@ footer{
 }
 
 .blog img{
-    width: 500px;
+    width: 450px;
 }
 
 .blog img:hover{
     box-shadow: 2px 2px 50px 12px rgb(0, 0, 0);
     transform: scale(0.95);
+    cursor: url(images/hand.png), auto;   
 }
 
 .blog img:active{
@@ -332,6 +407,7 @@ footer{
     color: rgb(0, 0, 0);
     text-shadow: 2px 2px 2px rgb(148, 148, 148); 
     transform: scale(0.95);
+    cursor: url(images/hand.png), auto;   
 }
 
 .blog a:active{
@@ -342,29 +418,30 @@ footer{
 .footer{
     margin: 0;
     display: flex;
-    position: absolute;
+    position: static;
     width: 100%;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    height: 0px;
-    font-size: 40px;
+    height: auto;
     background-color: black;
     background-size: cover;
     background-attachment: fixed;
     bottom: 0;
     color: white;
-}
+    border-top: 2px goldenrod solid;
+} 
 
 .footer a{
-    color: rgb(53, 53, 53);    
+    color: #ffff;   
     text-decoration: none;
-    text-align: center;
+    align-content: center;
     margin-bottom: 10px;
     font: bold;
-    padding: 10px;
+    padding: 20px;
 }
 
 .footer a:hover{
-    color: rgb(0, 0, 0);
+    color: rgb(146, 146, 146);
+    cursor: url(images/hand.png), auto;   
 }
 
 .footer a:active{
@@ -379,6 +456,19 @@ footer{
     padding: 10px;
 }
 
+.address a{
+    margin-top: 40px;
+}
+
+.address img{
+    width: 40px;
+    height: 40px;
+    margin-top: 8px;
+    background-color: white;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
 .location{
     display: flex;
 }
@@ -389,23 +479,28 @@ footer{
 
 .contact{
     margin-left: 400px;
-    margin-top: 25px ;
+    margin-top: 30px ;
+    font-size: 35px;
 }
 
 .contact div{
     display: flex;
-    margin-top: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .contact img{
     margin-right: 20px;
     margin-top: 12px;
+    border-radius: 40px;
+    background-color: white;
 }
 
 .copyright{
     font-size: 18px;
     margin-left: 360px;
+    padding-right: 50px;
     margin-top: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .gallery-container {
@@ -418,20 +513,6 @@ footer{
     justify-content: space-between;
 }
 
-.gallery-container button{
-    background-color: rgba(255, 255, 255, 0);
-    color: white;
-}
-
-.gallery-container button:hover{
-    background-color: rgb(88, 88, 88);
-    color: #000000;
-}
-
-.gallery-container button:active{
-    transform: scale(0.9);
-}
-
 .image-container{
     width: 60%;
     height: 600px;
@@ -442,23 +523,21 @@ footer{
     width: 100%;
 }
 
-.navigation-buttons a {
+.navigation-buttons button {
     text-decoration: none;
-    display: inline-block;
+    display: block;
+    border-radius: 30px;
+    margin-top: 180px;
+    width: 250px;
+    height: 100px;
     padding: 8px 16px;
-}
-  
-.navigation-buttons a:hover {
-    background-color: #7e7e7e88;
-    color: black;
+    background-color: black;
 }
 
-.navigation-buttons button {
-    width: 80px;
-    height: 300px;
-    margin-top: 100px;
-    font-size: 70px;
-    border-radius: 30px;
+.navigation-buttons button:hover {
+    background-color: #7e7e7e88;
+    color: black;
+    cursor: url(images/hand.png), auto;   
 }
 
 .table_users{
@@ -519,81 +598,95 @@ table {
     text-align: right;
   }
   
+/* Estilos de la pestaña dic_webcam.html */
+.container-blog{
+    background-image: url(images/background-blog.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    padding: 80px;
+    padding-left: 90px;
+    padding-right: 200px;
+    padding-top: 30px;
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-tbody tr:nth-child(odd) {
-    background-color: #a0a0a0;
-  }
-  
-  tbody tr:nth-child(even) {
-    background-color: #636363;
-  }
+.content-blog{
+    display: block;
+    justify-content: space-between;
+}
+
+.title-blog{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+}
+
+.intro-blog{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(128, 128, 128);
+    font-size: 18px;
+    padding-right: 500px;
+}
+
+.subtitle-blog{
+    color: #ffd665;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 34px;
+    
+}
+
+.table-blog{
+    font-size: 15px;
+    width: 800px;
+    margin-left: 100px;
+    border: #cea729 solid 1px;
+    margin-top: 30px; 
+}
+
+.table-blog td{
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.table-blog th{
+    background-color: #000000;
+    font-size: 28px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 5px;
+    margin: 20px;
+}
+
+.container-tables{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.list-blog{
+    list-style-type: decimal;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+tr {
+    border-bottom: #cea729 solid 1px;
+}
+
+tr:nth-child(even){
+    background-color: #3f3f3f;
+}
+
+tr:nth-child(odd){
+    background-color: #575757;
+}
 
 
-@media only screen and (max-width: 950px){
+/* Estilos responsive */
 
-    .container{
-        width: 100%;
-        position: relative;
-    }
+@media only screen and (max-width: 430px){
 
-    .dropbtn{
-        margin-left: 50px;
-        width: 260px;
-    }
-
-    .dropdown-content{
-        width: 400px;
-    }
-
-    .login{
-        margin-left: 50px;
-    }
-
-    .slider-frame{
-        margin-bottom: -500px;
-        width: 900px;
-    }
-
-    .container_entrevista{
-        display: block;
-        justify-content: center;
-        padding: 10px;
-    }
-
-    .container_entrevista iframe{
-        width: 90%;
-    }
-
-    .txt-container{
-        font-size: 18px;
-    }
-
-    .blog img{
-        width: 220px;
-    }
-
-    .blog a{
-        font-size: 18px;
-    }
-
-    .footer {
-        justify-content: space-between;
-        font-size: 30px;
-        width: 100%;
-    }
-
-    .footer .address div{
-        width: 250px;
-        margin-right: 15px;
-    }
-
-    .footer .contact{
-        justify-content: center;
-        margin-left: 10%;
-    }
-
-    .footer .copyright{
-        margin-left: 18%;
-        font-size: 15px;
-    }
 }
