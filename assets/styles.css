@@ -30,9 +30,9 @@ footer{
 
 #botonIrArriba {
     display: none;
-    position:fixed;
+    position: fixed;
     bottom: -25px;
-    left: 50%;
+    left: 48.2%;
     z-index: 99;
     font-size: 18px;
     background-color: goldenrod;
@@ -48,6 +48,7 @@ footer{
     background-size: cover;
     text-align: right;
     width: 100%;
+    margin-right: 10px;
 }
 
 .banner_redes img{
@@ -207,37 +208,84 @@ footer{
     margin-top: -60px;
 }
 
+/* Estilos botón formulario aspirantes */
 
+.container_btn{
+    overflow: hidden;
+    border-radius: 20px;
+    position: absolute;
+    right: 50px;
+    padding: 0px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
-.form_background{
-    border-radius: 10px;
-    margin-left: 1550px;
-    margin-top: 50px;
-    width: 300px;
-    height: 40px; 
-    background-image: linear-gradient(to right, goldenrod, yellow, goldenrod, yellow, goldenrod);
+.container_btn1{
+    overflow: hidden;
+    border-radius: 20px;
+    position: absolute;
+    right: 40%;
+    padding: 0px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.btn{
+    position: relative;
+    padding: 20px;
+    text-decoration: none;
+    color: #000000;
+    overflow: hidden;
 }
 
 .form_btn{
-    text-decoration: none;
-    text-align: center;
-    color: rgb(173, 124, 0);
+    transition: all 0.6s ease;
+    z-index: 1;
+    background-image: linear-gradient(to right, rgba(255, 255, 0, 0.904), rgba(218, 165, 32, 0.884), rgba(255, 255, 0, 0.836), rgba(218, 165, 32, 0.884), rgba(255, 255, 0, 0.842));
+    font-size: 25px;
+    cursor: url(images/hand.png);
 }
 
-.form_btn:hover{
-    color: black;
-    cursor: url(images/hand.png), auto;   
+.form_btn::after{
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    left: -32px;
+    top: 0;
+    background-color: #ffff;
+    transform: skew(-20deg, 0deg);
+    transition: all 0.8s ease;
+    cursor: url(images/hand.png);
 }
+
+.form_btn::before{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transform: skew(-20deg, 0deg);
+    border: 2px solid #000000;
+    transition: all 0.8s ease;
+    z-index: -1;
+    cursor: url(images/hand.png);
+}
+
+.form_btn:hover::after{
+    background-color: #ffff;
+    transform: skew(-20deg, 0deg) translateX(550px);
+    cursor: url(images/hand.png);
+}
+
+.form_btn:hover::before{
+    background-image: linear-gradient(to right, yellow, goldenrod, yellow, goldenrod, yellow);
+    transform: skew(-20deg, 0deg) scale(1.1);
+    cursor: url(images/hand.png);
+    }
 
 .container-capt{
     display: block;
     justify-content: center;
     text-align: center;
-}
-
-.texto-capt h2{
-    color: white;
-    margin-top: 20px;
 }
 
 .form-capt{
@@ -248,32 +296,6 @@ footer{
     width: 300px;
     height: 40px; 
     background-image: linear-gradient(to right, goldenrod, yellow, goldenrod, yellow, goldenrod);
-}
-
-#btn-capt{
-    text-decoration: none;
-    text-align: center;
-    color: rgb(173, 124, 0);
-    cursor: url(images/hand.png), auto;
-}
-
-#btn-capt h1{
-    margin: 0;
-}
-
-#form-capt:hover{
-    color: #000000;
-    background-image: linear-gradient(to right, yellow, goldenrod, yellow, goldenrod, yellow);
-}
-
-#form_btn:hover{
-    background-image: linear-gradient(to right, yellow, goldenrod, yellow, goldenrod, yellow);
-    cursor: url(images/hand.png), auto;   
-}
-
-.form_background:hover{
-    background-image: linear-gradient(to right, yellow, goldenrod, yellow, goldenrod, yellow);
-    cursor: url(images/hand.png), auto;   
 }
 
 .mision_vision{
@@ -496,7 +518,7 @@ footer{
 }
 
 .copyright{
-    font-size: 18px;
+    font-size: 20px;
     margin-left: 360px;
     padding-right: 50px;
     margin-top: 30px;
@@ -684,6 +706,142 @@ tr:nth-child(odd){
     background-color: #575757;
 }
 
+/*Estilos formulario para entrevista*/
+
+.container{
+    width: 98%;
+    margin: 0;
+    padding: 10px;
+}
+
+.container_form_entrev{
+    color: rgb(141, 141, 141);
+    font-size: 20px;
+    text-align: center; 
+    width: 100%;
+}
+
+.container_title{
+    width: 100%;
+    padding: 2px;
+    margin-bottom: 20px;
+}
+
+.title_form{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 45px;
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 5px 10px goldenrod;
+    background-image: linear-gradient(to right, rgb(255, 225, 128),#daa520,rgb(255, 225, 128),goldenrod,rgb(255, 225, 128));
+    border-bottom: goldenrod solid 2px;
+    border-top: goldenrod solid 2px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.form_entrevista{
+    display: block;
+    letter-spacing: 1px;  
+    text-align: left;
+}
+
+.form_entrevista div{
+    margin: 30px;
+    padding: 20px;
+}
+
+.form_entrevista 
+input[type=text],
+input[type=number], 
+input[type=email]{
+    background-color: rgb(68, 68, 68);
+    color: white;
+    border-radius: 5px;
+    width: 400px;
+    height: 30px;
+    padding-left: 10px;
+}
+
+.form_entrevista input[type="radio"],
+.form_entrevista input[type="checkbox"]{
+    display: none;
+
+}
+
+.form_entrevista .radio label,
+.form_entrevista .checkbox label{
+    padding: 5px 15px 5px 51px;
+    display: inline-block;
+    position: relative;
+    font-size: 1em;
+    border-radius: 3px;
+    cursor: url('images/hand.png');
+}
+
+.form_entrevista .radio label:hover,
+.form_entrevista .checkbox label:hover{
+    background: rgba(218, 165, 32, 0.603);
+}
+
+.form_entrevista .radio label:before,
+.form_entrevista .checkbox label:before{
+    content: "";
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    background: none;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 17px;
+    top: 10px;
+}
+
+.form_entrevista .checkbox label:before{
+    border-radius: 3px;
+}
+
+.form_entrevista input[type="radio"]:checked + label,
+.form_entrevista input[type="checkbox"]:checked + label{
+    padding: 5px 15px;
+    background: rgba(218, 165, 32, 0.603);
+    border-radius: 2px;
+    color: #fff;
+}
+
+.form_entrevista input[type="radio"]:checked + label:before,
+.form_entrevista input[type="checkbox"]:checked + label:before{
+    display: none;
+}
+
+.form_entrevista button{
+    padding: 10px;
+    font-size: 30px;
+    width: 200px;
+    cursor: url("images/cursor.png");
+}
+
+.form_entrevista textarea{
+    background-color: rgb(70, 70, 70);
+    color: white;
+    border-radius: 5px;
+    width: 500px;
+    height: 100px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.question{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: goldenrod;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+#mailto{
+    opacity: 0;
+}
 
 /* Estilos responsive */
 

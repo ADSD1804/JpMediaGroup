@@ -101,7 +101,7 @@
         <button id="botonIrArriba" onclick="irAlPrincipio()"><img src="assets/images/arrow.png" alt=""></button>
         </section>
     <script src="backend/menu.js"></script>
-    <script src="backend/animation.js"></script>
+    <script src="backend/auto_scroll.js"></script>
 
     <footer>
         <section class="footer">
@@ -124,7 +124,7 @@
             </section>
             <section class="copyright">
                 <p>Cada modelo que aparece en esta web, es mayor de 18 años.</p>
-                <p>© 2024 JP Media Group</p>
+                <p>© 2024 JP Media Group.</p>
             </section>
         </section>
         <div class="banner_redes">

@@ -87,7 +87,7 @@
 
         <button id="botonIrArriba" onclick="irAlPrincipio()"><img src="assets/images/arrow.png" alt=""></button>
     </section>
-    <script src="backend/animation.js"></script>
+    <script src="backend/auto_scroll.js"></script>
     <script href="backend/menu.js"></script>
 </body>
 

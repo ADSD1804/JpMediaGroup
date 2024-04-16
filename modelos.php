@@ -1,3 +1,9 @@
+<?php
+
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -35,7 +41,7 @@
                 </button>
                 <div id="form_login" class="login_content">
                     <h2>Iniciar Sesión</h2>
-                    <form method="post" action="<?php echo $_SERVER['PHP_SELF'] ?>">
+                    <form method="post" action="">
                         <input type="email" id="email" name="email" placeholder="Correo" required><br>
                         <input type="password" id="contrasenia" name="contrasenia" placeholder="Contraseña"
                             required><br>
@@ -51,9 +57,9 @@
             <div class="texto-capt">
                 <h2>Completa este formulario y duplica tus ingresos!!</h2>
             </div>
-            <div class="form-capt">
-                <a href="form_entrevista.php" id="btn-capt" target="_blank">
-                    <h1>Conviertete en Modelo</h1>
+            <div class="container_btn1">
+                <a href="form_entrevista.php" class="btn form_btn" target="_blank">
+                    Conviértete en Modelo
                 </a>
             </div>
         </div>
@@ -110,7 +116,8 @@
             </section>
             <section class="copyright">
                 <p>Cada modelo que aparece en esta web, es mayor de 18 años.</p>
-                <p>© 2024 JP Media Group</p>
+                <p>© 2024 JP Media Group.</p>
+                
             </section>
         </section>
         <div class="banner_redes">
@@ -121,7 +128,7 @@
         </div>
     </footer>
 
-    <script src="backend/animation.js"></script>
+    <script src="backend/auto_scroll.js"></script>
     <script src="backend/menu.js"></script>
     <script src="backend/galeria.js"></script>
 </body>

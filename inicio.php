@@ -90,9 +90,9 @@ if ($_POST) {
             <div class="subtitle_ini">
                 <h3>Rellena el formulario y agenda tu entrevista</h3>
             </div>
-            <div class="form_background">
-                <a href="form_entrevista.php" class="form_btn" target="_blank">
-                    <h1>Conviertete en Modelo</h1>
+            <div class="container_btn">
+                <a href="form_entrevista.php" class="btn form_btn" target="_blank">
+                    Conviértete en Modelo
                 </a>
             </div>
         </div>
@@ -200,7 +200,7 @@ if ($_POST) {
 
             <section class="copyright">
                 <p>Cada modelo que aparece en esta web, es mayor de 18 años.</p>
-                <p>© 2024 JP Media Group</p>
+                <p>© 2024 JP Media Group.</p>
             </section>
         </div>
         <div class="banner_redes">
@@ -210,7 +210,8 @@ if ($_POST) {
             <a href="mailto:admon.jpmedia@gmail.com" target="_blank"><img src="assets/images/gmail.png"></a>
         </div>
     </footer>
-    <script src="backend/animation.js"></script>
+    <script src="backend/auto_scroll.js"></script>
     <script src="backend/menu.js"></script>
 </body>
+
 </html>
