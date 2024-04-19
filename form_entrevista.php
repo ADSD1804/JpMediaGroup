@@ -32,10 +32,10 @@
     <section class="container">
         <div class="container_form_entrev">
             <div class="container_title">
-                <h1 class="title_form">Trabaja con nosotros.</h1>
+                <h1 class="title_form">Trabaja con nosotros</h1>
             </div>
 
-            <form action="" id="form_entrevista" class="form_entrevista">
+            <form method="POST" id="form_entrevista" class="form_entrevista">
                 <div>
                     <h2 class="question">Nombre Completo:</h2>
                     <input type="text" name="nombre" id="nombre" alt="nombre" required><br>
@@ -55,32 +55,32 @@
                 </div>
                 <div class="radio">
                     <h2 class="question">¿Cuentas con experiencia como modelo?</h2>
-                    <input type="radio" name="si" id="si">
+                    <input type="radio" name="exp_model" id="si">
                     <label for="si">Si</label><br>
-                    <input type="radio" name="no" id="no">
+                    <input type="radio" name="exp_model" id="no">
                     <label for="no">No</label><br>
                 </div>
                 <div>
                     <h2 class="question">Si tu respuesta fue sí, cuánto tiempo?</h2>
-                    <input type="text" name="exp-tiempo" id="exp-tiempo"><br>
+                    <input type="text" name="exp-tiempo" id="tiempo-model"><br>
                 </div>
                 <div class="radio">
                     <h2 class="question">Si tienes experiencia, ¿Qué tipo de páginas son de tu preferencia?</h2>
-                    <input type="radio" name="publicas" id="publicas">
+                    <input type="radio" name="preferencia" id="publicas">
                     <label for="publicas">Públicas</label><br>
-                    <input type="radio" name="privadas" id="privadas">
+                    <input type="radio" name="preferencia" id="privadas">
                     <label for="privadas">Privadas</label><br>
                 </div>
                 <div class="radio">
                     <h2 class="question">¿Cuentas con experiencia en servicio al cliente?</h2>
-                    <input type="radio" name="si" id="si">
-                    <label for="si">Si</label><br>
-                    <input type="radio" name="no" id="no">
-                    <label for="no">No</label><br>
+                    <input type="radio" name="exp-servi" id="si_exp">
+                    <label for="si_exp">Si</label><br>
+                    <input type="radio" name="exp-servi" id="no_exp">
+                    <label for="no_exp">No</label><br>
                 </div>
                 <div>
                     <h2 class="question">Si tu respuesta fué sí, cuánto tiempo?</h2>
-                    <input type="text" name="exp-tiempo" id="exp-tiempo"><br>
+                    <input type="text" name="tiempo-servi" id="tiempo-servi"><br>
                 </div>
                 <div>
                     <h2 class="question">¿Tienes algún percance que afecte tu horario laboral?</h2>
@@ -88,60 +88,60 @@
                 </div>
                 <div class="checkbox">
                     <h2 class="question">¿Como nos encontraste?</h2>
-                    <input type="checkbox" name="redes" id="redes">
+                    <input type="checkbox" name="encontrar" id="redes">
                     <label for="redes">Redes Sociales</label><br>
-                    <input type="checkbox" name="referido" id="referido">
+                    <input type="checkbox" name="encontrar" id="referido">
                     <label for="referido">Referido</label><br>
-                    <input type="checkbox" name="navegacion" id="navegacion">
+                    <input type="checkbox" name="encontrar" id="navegacion">
                     <label for="navegacion">Navegando en internet</label><br>
                     <input type="text" placeholder="Otra"><br>
                 </div>
                 <div class="radio">
                     <h2 class="question">Nivel académico alcanzado</h2>
-                    <input type="radio" name="primaria" id="primaria">
+                    <input type="radio" name="academico" id="primaria">
                     <label for="primaria">Básica Primaria</label><br>
-                    <input type="radio" name="bachiller" id="bachiller">
+                    <input type="radio" name="academico" id="bachiller">
                     <label for="bachiller">Bachiller</label><br>
-                    <input type="radio" name="tecnico" id="tecnico">
+                    <input type="radio" name="academico" id="tecnico">
                     <label for="tecnico">Técnico</label><br>
-                    <input type="radio" name="tecnologo" id="tecnologo">
+                    <input type="radio" name="academico" id="tecnologo">
                     <label for="tecnologo">Tecnólogo</label><br>
-                    <input type="radio" name="profesional" id="profesional">
+                    <input type="radio" name="academico" id="profesional">
                     <label for="profesional">Profesional</label><br>
                 </div>
                 <div class="radio">
                     <h2 class="question">Nivel de Inglés</h2>
-                    <input type="radio" name="basico" id="basico">
+                    <input type="radio" name="ingles" id="basico">
                     <label for="basico">Básico</label><br>
-                    <input type="radio" name="medio" id="medio">
+                    <input type="radio" name="ingles" id="medio">
                     <label for="medio">Medio</label><br>
-                    <input type="radio" name="alto" id="alto">
+                    <input type="radio" name="ingles" id="alto">
                     <label for="alto">Alto</label><br>
                 </div>
                 <div class="radio">
                     <h2 class="question">Nivel de Informática</h2>
-                    <input type="radio" name="junior" id="junior">
+                    <input type="radio" name="informatica" id="junior">
                     <label for="junior">Básico</label><br>
-                    <input type="radio" name="semi-senior" id="semi-senior">
+                    <input type="radio" name="informatica" id="semi-senior">
                     <label for="semi-senior">Medio</label><br>
-                    <input type="radio" name="senior" id="senior">
+                    <input type="radio" name="informatica" id="senior">
                     <label for="senior">Alto</label><br>
                 </div>
                 <div class="radio">
                     <h2 class="question">¿Qué horario es de tu preferencia?</h2>
-                    <input type="radio" name="mañana" id="mañana">
+                    <input type="radio" name="horario" id="mañana">
                     <label for="mañana">Mañana (6:00 am - 2:00 pm)</label><br>
-                    <input type="radio" name="tarde" id="tarde">
+                    <input type="radio" name="horario" id="tarde">
                     <label for="tarde">Tarde (2:00 pm - 10:00 pm)</label><br>
-                    <input type="radio" name="noche" id="noche">
+                    <input type="radio" name="horario" id="noche">
                     <label for="noche">Noche (10:00 pm - 6:00 am)</label><br>
                 </div>
                 <div class="radio">
                     <h2 class="question">¿Tienes hijos?</h2>
-                    <input type="radio" name="si" id="si">
-                    <label for="si">Si</label><br>
-                    <input type="radio" name="no" id="no">
-                    <label for="no">No</label><br>
+                    <input type="radio" name="hijos" id="si_hijos">
+                    <label for="si_hijos">Si</label><br>
+                    <input type="radio" name="hijos" id="no_hijos">
+                    <label for="no_hijos">No</label><br>
                 </div>
                 <div>
                     <h2 class="question">¿Qué te motiva en el día a día?</h2>

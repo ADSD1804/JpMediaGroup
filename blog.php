@@ -71,29 +71,21 @@
                     <br>Manejo de Cámara</a>
                 </div>
                 <div>
-                    <a href="https://docs.google.com/presentation/d/1_Ok9-82cnTgixBZ4B5jftagAda2nfVb7Kzyvl_kkHYg/edit?usp=sharing"
+                    <a href="blog/juguetes.html"
                         target="_blank"><img src="assets/images/Vista_Previa_Juguetes.png" width="500px">
                         <br>Juguetes Sexuales</a>
                 </div>
                 <div>
-                    <a href="https://docs.google.com/presentation/d/1tZUfSBPZ435UQJ6XO2jKihtNbqM4bf5ecMMAK-oLLPM/edit?usp=sharing"
+                    <a href="blog/comunicacion.html"
                         target="_blank"><img src="assets/images/Vista_Previa_Comunicación.png" width="500px">
                         <br>Comunicación Webcam</a>
                 </div>
             </section>
             <section>
                 <div>
-                    <a href="https://docs.google.com/presentation/d/1-bsyKzUP9JHjWcAF_ysdMz-Wj33V3DX8l6kQAyfve6s/edit?usp=sharing"
+                    <a href="blog/ganar_mas.html"
                         target="_blank"><img src="assets/images/Vista_Previa_Ganar.png" width="500px"> <br> ¿Como Ganar
                         Más?</a>
-                </div>
-                <div>
-                    <a href="" target="_blank"><img src="assets/images/Vista_Previa_Dicc.png" width="500px">
-                        <br>Documento 2</a>
-                </div>
-                <div>
-                    <a href="" target="_blank"><img src="assets/images/Vista_Previa_Dicc.png" width="500px">
-                        <br>Documento 3</a>
                 </div>
             </section>
         </div>

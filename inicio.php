@@ -1,39 +1,3 @@
-<?php
-require "./backend/database.php";
-
-if ($_POST) {
-
-    $email = $_POST["email"];
-    $password = $_POST["contrasenia"];
-
-    $sql = "SELECT nombre FROM usuarios WHERE email = '$email' ";
-    $result = $connect->query($sql);
-    $num = $result->num_rows;
-
-    if ($num > 0) {
-
-        $row = $result->fetch_assoc();
-        $password_bd = $row["contraseña"];
-
-        $password_c = sha1($password);
-
-        if ($password_bd == $password_c) {
-
-            $_SESSION['nombre'] = $row['nombre'];
-            $_SESSION['email'] = $row['email'];
-            $_SESSION['id_cargo'] = $row['id_cargo'];
-
-            header('Location: profile.php');
-
-        } else {
-            echo "La contraseña no coincide.";
-        }
-    } else {
-        echo "No existe el correo ingresado";
-    }
-}
-
-?>
 
 <!DOCTYPE html>
 <html lang="es">
