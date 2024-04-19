@@ -1,4 +1,4 @@
-const $form = document.getElementsById("#form_entrevista");
+const $form = document.getElementsByName("form_entrevista");
 
 $form.addEventListener("submit", handleSubmit);
 
@@ -27,7 +27,6 @@ function handleSubmit(event) {
     Dudas: ${form.get("dudas")}`
   );
 
-  $buttonMailto.click(alert(
-    "Gracias por llenar nuestro formulario!! Pronto nos comunicaremos contigo."
-  ));
+  $buttonMailto.click();
+  alert("Gracias por llenar nuestro formulario!! Pronto nos comunicaremos contigo.");
 }

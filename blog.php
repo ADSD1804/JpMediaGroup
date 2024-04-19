@@ -12,6 +12,7 @@
 <body>
     <header>
         <div class="banner_redes">
+            <a href="https://wa.me/573225717563" target="_blank"><img src="assets/images/whatsapp-logo.png" alt=""></a>
             <a href="https://www.facebook.com/jpmediagroupa/" target="_blank"><img src="assets/images/facebook.png"></a>
             <a href="https://www.instagram.com/jpmediagroup_02/" target="_blank"><img
                     src="assets/images/instagram.png"></a>
@@ -56,42 +57,44 @@
                         Webcam</a>
                 </div>
                 <div>
-                    <a href="blog/def_webcam.html"
-                        target="_blank"><img src="assets/images/Vista_Previa_Que_es.png" width="500px">
+                    <a href="blog/def_webcam.html" target="_blank"><img src="assets/images/Vista_Previa_Que_es.png"
+                            width="500px">
                         <br>¿Qué es el WebCam?</a>
                 </div>
                 <div>
-                    <a href="blog/tokens.html" target="_blank"><img src="assets/images/Vista_Previa_Tokens.png" width="500px">
+                    <a href="blog/tokens.html" target="_blank"><img src="assets/images/Vista_Previa_Tokens.png"
+                            width="500px">
                         <br>¿Como Funcionan los Tokens?</a>
                 </div>
             </section>
             <section>
                 <div>
-                    <a href="blog/manejo_cam.html" target="_blank"><img src="assets/images/Vista_Previa_Manejo_Camara.png" width="500px"> 
-                    <br>Manejo de Cámara</a>
+                    <a href="blog/manejo_cam.html" target="_blank"><img
+                            src="assets/images/Vista_Previa_Manejo_Camara.png" width="500px">
+                        <br>Manejo de Cámara</a>
                 </div>
                 <div>
-                    <a href="blog/juguetes.html"
-                        target="_blank"><img src="assets/images/Vista_Previa_Juguetes.png" width="500px">
+                    <a href="blog/juguetes.html" target="_blank"><img src="assets/images/Vista_Previa_Juguetes.png"
+                            width="500px">
                         <br>Juguetes Sexuales</a>
                 </div>
                 <div>
-                    <a href="blog/comunicacion.html"
-                        target="_blank"><img src="assets/images/Vista_Previa_Comunicación.png" width="500px">
+                    <a href="blog/comunicacion.html" target="_blank"><img
+                            src="assets/images/Vista_Previa_Comunicación.png" width="500px">
                         <br>Comunicación Webcam</a>
                 </div>
             </section>
             <section>
                 <div>
-                    <a href="blog/ganar_mas.html"
-                        target="_blank"><img src="assets/images/Vista_Previa_Ganar.png" width="500px"> <br> ¿Como Ganar
+                    <a href="blog/ganar_mas.html" target="_blank"><img src="assets/images/Vista_Previa_Ganar.png"
+                            width="500px"> <br> ¿Como Ganar
                         Más?</a>
                 </div>
             </section>
         </div>
 
         <button id="botonIrArriba" onclick="irAlPrincipio()"><img src="assets/images/arrow.png" alt=""></button>
-        </section>
+    </section>
     <script src="backend/menu.js"></script>
     <script src="backend/auto_scroll.js"></script>
 
@@ -120,6 +123,7 @@
             </section>
         </section>
         <div class="banner_redes">
+            <a href="https://wa.me/573225717563" target="_blank"><img src="assets/images/whatsapp-logo.png" alt=""></a>
             <a href="https://www.facebook.com/jpmediagroupa/" target="_blank"><img src="assets/images/facebook.png"></a>
             <a href="https://www.instagram.com/jpmediagroup_02/" target="_blank"><img
                     src="assets/images/instagram.png"></a>

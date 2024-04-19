@@ -18,6 +18,7 @@
 <body>
     <header>
         <div class="banner_redes">
+            <a href="https://wa.me/573225717563" target="_blank"><img src="assets/images/whatsapp-logo.png" alt=""></a>
             <a href="https://www.facebook.com/jpmediagroupa/" target="_blank"><img src="assets/images/facebook.png"></a>
             <a href="https://www.instagram.com/jpmediagroup_02/" target="_blank"><img
                     src="assets/images/instagram.png"></a>
@@ -117,10 +118,11 @@
             <section class="copyright">
                 <p>Cada modelo que aparece en esta web, es mayor de 18 años.</p>
                 <p>© 2024 JP Media Group.</p>
-                
+
             </section>
         </section>
         <div class="banner_redes">
+            <a href="https://wa.me/573225717563" target="_blank"><img src="assets/images/whatsapp-logo.png" alt=""></a>
             <a href="https://www.facebook.com/jpmediagroupa/" target="_blank"><img src="assets/images/facebook.png"></a>
             <a href="https://www.instagram.com/jpmediagroup_02/" target="_blank"><img
                     src="assets/images/instagram.png"></a>

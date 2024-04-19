@@ -11,10 +11,10 @@
 
 <body>
     <header>
-        <div class="banner_redes">
+    <div class="banner_redes">
+            <a href="https://wa.me/573225717563" target="_blank"><img src="assets/images/whatsapp-logo.png" alt=""></a>
             <a href="https://www.facebook.com/jpmediagroupa/" target="_blank"><img src="assets/images/facebook.png"></a>
-            <a href="https://www.instagram.com/jpmediagroup_02/" target="_blank"><img
-                    src="assets/images/instagram.png"></a>
+            <a href="https://www.instagram.com/jpmediagroup_02/" target="_blank"><img src="assets/images/instagram.png"></a>
             <a href="mailto:admon.jpmedia@gmail.com" target="_blank"><img src="assets/images/gmail.png"></a>
         </div>
         <div class="menu_container">
@@ -35,23 +35,28 @@
                 <h1 class="title_form">Trabaja con nosotros</h1>
             </div>
 
-            <form method="POST" id="form_entrevista" class="form_entrevista">
+            <form method="POST" name="form_entrevista" class="form_entrevista">
                 <div>
-                    <h2 class="question">Nombre Completo:</h2>
-                    <input type="text" name="nombre" id="nombre" alt="nombre" required><br>
+                    <h2 class="question">Nombres:</h2>
+                    <input type="text" name="nombre" id="nombre" alt="nombre" required pattern="[a-zA-Z0-9\s]+" maxlength="30"><br>
+                </div>
+
+                <div>
+                    <h2 class="question">Apellidos:</h2>
+                    <input type="text" name="apellido" id="apellido" required pattern="[a-zA-Z0-9\s]+" maxlength="30"> 
                 </div>
 
                 <div>
                     <h2 class="question">Número de Cédula:</h2>
-                    <input type="number" name="cedula" id="cedula" alt="cedula" required><br>
+                    <input type="text" name="cedula" id="cedula" alt="cedula" required pattern="^[0-9]+" minlength="8" ><br>
                 </div>
                 <div>
                     <h2 class="question">Correo electrónico:</h2>
-                    <input type="email" name="correo" id="correo" alt="correo" required><br>
+                    <input type="email" name="correo" id="correo" alt="correo" required ><br>
                 </div>
                 <div>
-                    <h2 class="question">Número de teléfono:</h2>
-                    <input type="number" name="telefono" id="telefono" alt="telefono" required><br>
+                    <h2 class="question">Número de celular:</h2>
+                    <input type="number" name="telefono" id="telefono" alt="telefono" required pattern="^[0-9]+" minlength="10"><br>
                 </div>
                 <div class="radio">
                     <h2 class="question">¿Cuentas con experiencia como modelo?</h2>
@@ -185,9 +190,9 @@
             </section>
         </section>
         <div class="banner_redes">
+            <a href="https://wa.me/573225717563" target="_blank"><img src="assets/images/whatsapp-logo.png" alt=""></a>
             <a href="https://www.facebook.com/jpmediagroupa/" target="_blank"><img src="assets/images/facebook.png"></a>
-            <a href="https://www.instagram.com/jpmediagroup_02/" target="_blank"><img
-                    src="assets/images/instagram.png"></a>
+            <a href="https://www.instagram.com/jpmediagroup_02/" target="_blank"><img src="assets/images/instagram.png"></a>
             <a href="mailto:admon.jpmedia@gmail.com" target="_blank"><img src="assets/images/gmail.png"></a>
         </div>
     </footer>
