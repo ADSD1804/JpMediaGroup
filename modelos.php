@@ -1,9 +1,3 @@
-<?php
-
-
-
-?>
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -42,7 +36,20 @@
                 </button>
                 <div id="form_login" class="login_content">
                     <h2>Iniciar Sesión</h2>
-                    <form method="post" action="">
+                    <form method="post" action="backend/iniciarSesion.php">
+                        <hr>
+                        <?php
+                        if (isset($_GET['error'])) {
+                            ?>
+                            <p class="error">
+                                <?php
+                                echo $_GET['error']
+                                    ?>
+                            </p>
+                            <?php
+                        }
+                        ?>
+                        <hr>
                         <input type="email" id="email" name="email" placeholder="Correo" required><br>
                         <input type="password" id="contrasenia" name="contrasenia" placeholder="Contraseña"
                             required><br>

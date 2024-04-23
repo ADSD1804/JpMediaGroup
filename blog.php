@@ -30,7 +30,7 @@
                 <div><a href="blog.php">Blog</a></div>
             </div>
 
-            <div class="login">
+            <!-- <div class="login">
                 <button onclick="loginAnimation()" class="loginbtn"><img src="assets/images/user_icon.png" alt="">
                     <h2>INICIAR SESION</h2>
                 </button>
@@ -44,7 +44,7 @@
                         <button type="reset">Borrar</button>
                     </form>
                 </div>
-            </div>
+            </div> -->
         </div>
     </header>
     <section>
