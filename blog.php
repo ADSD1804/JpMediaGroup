@@ -36,7 +36,7 @@
                 </button>
                 <div id="form_login" class="login_content">
                     <h2>Iniciar Sesión</h2>
-                    <form method="post" action="<?php echo $_SERVER['PHP_SELF'] ?>">
+                    <form method="post" action="">
                         <input type="email" id="email" name="email" placeholder="Correo" required><br>
                         <input type="password" id="contrasenia" name="contrasenia" placeholder="Contraseña"
                             required><br>
