@@ -169,7 +169,7 @@ footer{
     margin: 20px;
 }
 
-  /*  */
+/*---------------------------------------------------------*/
 
   .dropdown-content {
     justify-content: right;
@@ -215,7 +215,7 @@ footer{
 }
 
 .title_ini{
-    background: 50% 100%/50% 50% no-repeat radial-gradient(ellipse at bottom, #fff, transparent, transparent);
+    background: 50% 100%/50% 50% no-repeat radial-gradient(ellipse at bottom, #ffff, transparent, transparent);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -231,7 +231,7 @@ footer{
     font-size: 30px;
     padding-right: 50px;
     margin-top: -60px;
-    background: 50% 100%/50% 50% no-repeat radial-gradient(ellipse at bottom, goldenrod, transparent, transparent);
+    background: 50% 100%/50% 50% no-repeat radial-gradient(ellipse at bottom, #ffff, transparent, transparent);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -257,12 +257,12 @@ footer{
   }
   @-webkit-keyframes glow {
     40% {
-      text-shadow: 0 0 8px #fff;
+      text-shadow: 0 0 8px #ffff;
     }
   }
   @keyframes glow {
     40% {
-      text-shadow: 0 0 8px #fff;
+      text-shadow: 0 0 8px #ffff;
     }
   }
 
@@ -461,10 +461,6 @@ footer{
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
-}
-
-.blog img{
-    width: 450px;
 }
 
 .blog img:hover{

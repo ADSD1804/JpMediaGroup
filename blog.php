@@ -52,42 +52,42 @@
             <h2>Blog</h2>
             <section>
                 <div>
-                    <a href="blog/dic_webcam.html"><img src="assets/images/Vista_Previa_Dicc.png" width="500px"> <br>
+                    <a href="blog/dic_webcam.html"><img src="assets/images/vista.png" width="450px" height="300px"> <br>
                         Diccionario
                         Webcam</a>
                 </div>
                 <div>
-                    <a href="blog/def_webcam.html" target="_blank"><img src="assets/images/Vista_Previa_Que_es.png"
-                            width="500px">
+                    <a href="blog/def_webcam.html" target="_blank"><img src="assets/images/model1.png"
+                    width="450px" height="300px">
                         <br>¿Qué es el WebCam?</a>
                 </div>
                 <div>
-                    <a href="blog/tokens.html" target="_blank"><img src="assets/images/Vista_Previa_Tokens.png"
-                            width="500px">
+                    <a href="blog/tokens.html" target="_blank"><img src="assets/images/model1.png"
+                    width="450px" height="300px">
                         <br>¿Como Funcionan los Tokens?</a>
                 </div>
             </section>
             <section>
                 <div>
                     <a href="blog/manejo_cam.html" target="_blank"><img
-                            src="assets/images/Vista_Previa_Manejo_Camara.png" width="500px">
+                            src="assets/images/model1.png" width="450px" height="300px">
                         <br>Manejo de Cámara</a>
                 </div>
                 <div>
-                    <a href="blog/juguetes.html" target="_blank"><img src="assets/images/Vista_Previa_Juguetes.png"
-                            width="500px">
+                    <a href="blog/juguetes.html" target="_blank"><img src="assets/images/model1.png"
+                    width="450px" height="300px">
                         <br>Juguetes Sexuales</a>
                 </div>
                 <div>
                     <a href="blog/comunicacion.html" target="_blank"><img
-                            src="assets/images/Vista_Previa_Comunicación.png" width="500px">
+                    src="assets/images/model1.png" width="450px" height="300px">
                         <br>Comunicación Webcam</a>
                 </div>
             </section>
             <section>
                 <div>
-                    <a href="blog/ganar_mas.html" target="_blank"><img src="assets/images/Vista_Previa_Ganar.png"
-                            width="500px"> <br> ¿Como Ganar
+                    <a href="blog/ganar_mas.html" target="_blank"><img src="assets/images/model1.png"
+                    width="450px" height="300px"> <br> ¿Como Ganar
                         Más?</a>
                 </div>
             </section>
